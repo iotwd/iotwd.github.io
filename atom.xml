@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wdxxy.net/"/>
-  <updated>2020-03-01T16:03:42.131Z</updated>
+  <updated>2020-03-01T16:08:12.111Z</updated>
   <id>https://wdxxy.net/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>Introduce of iot</title>
-    <link href="https://wdxxy.net/posts/introduce%20of%20iot.html"/>
-    <id>https://wdxxy.net/posts/introduce%20of%20iot.html</id>
+    <link href="https://wdxxy.net/posts/introduce-of-iot.html"/>
+    <id>https://wdxxy.net/posts/introduce-of-iot.html</id>
     <published>2020-03-01T14:25:58.000Z</published>
-    <updated>2020-03-01T16:03:42.131Z</updated>
+    <updated>2020-03-01T16:08:12.111Z</updated>
     
     <content type="html"><![CDATA[<ul><li>物联网：</li></ul><p>通过射频识别（RFID）装置、传感器、 全球定位系统等信息传感设备，按照约定的协议，把地球上的任何具体事物同互联网连接起来，并进行信息交换和通信，实现识别、定位、监控、控制和管理的一种网络。</p><a id="more"></a><h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><ul><li>物：<ul><li>有相应的接收器</li><li>发送器</li><li>cpu</li><li>存储功能</li><li>操作系统</li><li>数据发送器</li><li>专门的应用程序</li></ul></li><li>联<ul><li>物物相连的互联网</li><li>众多传感设备连接起来并在广域网内今昔信息</li></ul></li><li>网<ul><li>基础和核心依旧是互联网，却远远超出互联网的范畴。</li></ul></li><li>IOT的三个特性<ul><li>不能简单看为互联网的延伸</li><li>伴随新的业务共同发展</li><li>包括不同的通信模式，强调M2M（man to machine |  machine to machi…. ）</li></ul></li></ul><h2 id="2-特征"><a href="#2-特征" class="headerlink" title="2. 特征"></a>2. 特征</h2><ul><li>全面感知 （核心）<ul><li>利用传感器、电子标签等环境的各个可测量特征 </li></ul></li><li>可靠传递<ul><li>数据传递的稳定性和可靠性</li><li>adhoc多跳上传数据</li><li>有线和无线</li><li>zigbee，lora，nbIot </li></ul></li><li>智能处理（研究热点）<ul><li>目的：智能识别跟踪，定位监控和管理等</li><li>云计算和人工智能对海量数据进行存储分析和处理 </li></ul></li></ul><h2 id="3-体系结构（重要）"><a href="#3-体系结构（重要）" class="headerlink" title="3. 体系结构（重要）"></a>3. 体系结构（重要）</h2><p>桂晓琳（西交）五层架构：</p><ul><li>数据存储</li><li>数据处理</li><li>通信处理</li><li>自动控制技术</li><li>标识和感知</li></ul><p>三层架构（或四层）</p><ul><li><p>海 传感器海量的感知层。<br>在感知层进行计算，也是一个研究方向</p><ul><li><p>物计算：在感知层对数据进行计算（轻量级）</p></li><li><p>雾计算：边缘计算，分担云的计算压力</p></li></ul></li><li><p>网 互联网</p><p> 互联网形态很多，如何整合物联网到各个网络上进行应用？</p><p> ngi（next generation Internet） 下一代网络<br> <a href="https://en.wikipedia.org/wiki/Next_Generation_Internet" target="_blank" rel="noopener">Wikipedia : NGI</a></p><p> 无线网络 LTE </p><p> 与互联网隔离的专用网络，保证安全</p><p> 需要根据每一个层次的每一个模块进行安全处理</p></li><li><p>云 应用处理层</p></li></ul><p>分布式云</p><p>服务层也常称为中间件</p><h2 id="4-关键技术"><a href="#4-关键技术" class="headerlink" title="4. 关键技术"></a>4. 关键技术</h2><ul><li><p>基础资源管理与服务 pki</p><ul><li>名称和地址（依托IPV6）</li><li>核心技术  </li></ul></li><li><p>信息获取和识别技术</p><ul><li>传感器</li><li>RFID</li><li></li></ul></li><li><p>组网与传输技术</p><ul><li>无线传感网</li><li>计算机网络</li></ul></li><li><p>信息处理技术</p><p>传统数据库无法满足信息存储需求</p><ul><li>数据挖掘</li><li>数据清洗</li><li>深度学习</li><li>云和虚拟化</li><li>…</li></ul></li><li><p>安全技术</p></li><li><p>物联网系统集成技术</p><ul><li>MEMS（微电机系统）</li><li>集感知传输预处理等功能集中在一体的节点设备</li><li></li></ul></li><li><p>共性支持技术</p><ul><li>专用操作系统和综合软件开发环境</li></ul></li></ul><h2 id="5-应用和发展趋势"><a href="#5-应用和发展趋势" class="headerlink" title="5. 应用和发展趋势"></a>5. 应用和发展趋势</h2><ul><li>安全防护</li><li>更普及的智能消费设备</li><li>更加关注人工智能</li><li>更快速的数据转化</li></ul><h2 id="6-物联网行业"><a href="#6-物联网行业" class="headerlink" title="6. 物联网行业"></a>6. 物联网行业</h2><ul><li>智慧家居</li><li>智慧农业</li><li>智慧医疗</li><li>智慧工业</li><li>智慧教育</li><li>食品安全</li><li>智慧城市</li><li>智慧交通</li><li>…</li></ul><p>物联网是一种趋势，更多的需要我们去探索和创造…</p>]]></content>
     
