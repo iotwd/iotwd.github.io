@@ -62,7 +62,7 @@
 <meta property="og:description" content="前言 CSDN上有些教程很零散，对我这种小白不友好，在这记录一下自己在部署Java web项目的过程。环境为阿里云ecs学生机 （centos7） 实践周的简单智慧医疗系统，需要在网页查询数据，显示一定的历史数据，采用java来做云端。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2019-11-15T03:31:40.000Z">
-<meta property="article:modified_time" content="2020-03-01T13:50:24.793Z">
+<meta property="article:modified_time" content="2020-03-01T15:08:30.961Z">
 <meta property="article:author" content="iotwd">
 <meta property="article:tag" content="Java Web">
 <meta name="twitter:card" content="summary">
@@ -260,7 +260,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-01 21:50:24" itemprop="dateModified" datetime="2020-03-01T21:50:24+08:00">2020-03-01</time>
+                <time title="修改时间：2020-03-01 23:08:30" itemprop="dateModified" datetime="2020-03-01T23:08:30+08:00">2020-03-01</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -280,7 +280,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>3.4k</span>
+              <span>3.5k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -306,14 +306,10 @@
 
 </li>
 </ul>
-<h2 id="安装JDK"><a href="#安装JDK" class="headerlink" title="安装JDK"></a>安装JDK</h2><ol>
-<li><p>服务器安装JDK 1.8</p>
-<ul>
+<h2 id="1-安装JDK"><a href="#1-安装JDK" class="headerlink" title="1. 安装JDK"></a>1. 安装JDK</h2><h3 id="1-服务器安装JDK-1-8"><a href="#1-服务器安装JDK-1-8" class="headerlink" title="1. 服务器安装JDK 1.8"></a>1. 服务器安装JDK 1.8</h3><ul>
 <li>终端输入以下代码。<br><code>$yum -y install java-1.8.0-openjdk java-1.8.0-openjdk-devel</code></li>
 </ul>
-</li>
-<li><p>配置环境变量</p>
-<ul>
+<h3 id="2-配置环境变量"><a href="#2-配置环境变量" class="headerlink" title="2. 配置环境变量"></a>2. 配置环境变量</h3><ul>
 <li><p>将下面的三行添加到 /etc/profile 后面</p>
    <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.232.b09-0.el7_7.x86_64</span><br><span class="line"><span class="built_in">export</span> CLASSPATH=.:<span class="variable">$JAVA_HOME</span>/jre/lib/rt.jar:<span class="variable">$JAVA_HOME</span>/lib/dt.jar:<span class="variable">$JAVA_HOME</span>/lib/tools.jar</span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:<span class="variable">$JAVA_HOME</span>/</span><br></pre></td></tr></table></figure>
 </li>
@@ -322,38 +318,29 @@
 <li><p>验证是否安装成功，终端输入命令： <code>java -version</code></p>
 </li>
 </ul>
-</li>
-</ol>
-<h2 id="安装Tomcat"><a href="#安装Tomcat" class="headerlink" title="安装Tomcat"></a>安装Tomcat</h2><ol>
-<li><p>本机电脑下载tomcat </p>
-<ul>
+<h2 id="2-安装Tomcat"><a href="#2-安装Tomcat" class="headerlink" title="2. 安装Tomcat"></a>2. 安装Tomcat</h2><h3 id="1-本机电脑下载tomcat"><a href="#1-本机电脑下载tomcat" class="headerlink" title="1. 本机电脑下载tomcat"></a>1. 本机电脑下载tomcat</h3><ul>
 <li><p>进入下面网址下载tomcat，最新版就可以。<br><code>https://tomcat.apache.org/download-80.cgi</code></p>
 </li>
 <li><p>本机安装配置tomcat环境，用以调试开发。</p>
 </li>
 </ul>
-</li>
-<li><p>将tomecat.tar.gz下载到/usr/local或者先cd /usr/local</p>
-<ul>
+<h3 id="2-将tomecat-tar-gz下载到-usr-local或者先cd-usr-local"><a href="#2-将tomecat-tar-gz下载到-usr-local或者先cd-usr-local" class="headerlink" title="2. 将tomecat.tar.gz下载到/usr/local或者先cd /usr/local"></a>2. 将tomecat.tar.gz下载到/usr/local或者先cd /usr/local</h3><ul>
 <li>执行以下命令   <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget http://mirrors.shuosc.org/apache/   tomcat/tomcat-8/v8.5.24/bin/apache-tomcat-8.5.24.tar.gz</span><br></pre></td></tr></table></figure>
+
 </li>
 </ul>
-</li>
-<li><p>解压刚刚下载的文件，并且重命名为tomcat</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar zxvf apache-tomcat-8.5.47.tar.gz &amp; mv apache-tomcat-8.5.47 tomcat</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>启动tomcat</p>
-<ul>
+<h3 id="3-解压刚刚下载的文件，并且重命名为tomcat"><a href="#3-解压刚刚下载的文件，并且重命名为tomcat" class="headerlink" title="3. 解压刚刚下载的文件，并且重命名为tomcat"></a>3. 解压刚刚下载的文件，并且重命名为tomcat</h3>   <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ tar zxvf apache-tomcat-8.5.47.tar.gz &amp; mv apache-tomcat-8.5.47 tomcat</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-启动tomcat"><a href="#4-启动tomcat" class="headerlink" title="4. 启动tomcat"></a>4. 启动tomcat</h3><ul>
 <li><p>终端执行命令</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/<span class="built_in">local</span>/tomcat/bin/startup.sh</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ /usr/<span class="built_in">local</span>/tomcat/bin/startup.sh</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>出现成功的提示：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Using CATALINA_BASE:   /usr/<span class="built_in">local</span>/tomcat</span><br><span class="line">Using CATALINA_HOME:   /usr/<span class="built_in">local</span>/tomcat</span><br><span class="line">Using CATALINA_TMPDIR: /usr/<span class="built_in">local</span>/tomcat/temp</span><br><span class="line">Using JRE_HOME:        /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.121-0.b13.el7_3.x86_64</span><br><span class="line">Using CLASSPATH:       /usr/<span class="built_in">local</span>/tomcat/bin/bootstrap.jar:/usr/<span class="built_in">local</span>/tomcat/bin/tomcat-juli.jar</span><br><span class="line">Tomcat started.</span><br></pre></td></tr></table></figure>
+
 </li>
 </ul>
-</li>
-<li><p>不能访问tomcat的相关解决办法</p>
-<ul>
+<h3 id="5-不能访问tomcat的相关解决办法"><a href="#5-不能访问tomcat的相关解决办法" class="headerlink" title="5. 不能访问tomcat的相关解决办法"></a>5. 不能访问tomcat的相关解决办法</h3><ul>
 <li><p>防火墙未开启8080端口，解决如下</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost bin]<span class="comment"># firewall-cmd --zone=public --add-port=8080/tcp --permanent</span></span><br><span class="line">[root@localhost bin]<span class="comment"># firewall-cmd --reload</span></span><br></pre></td></tr></table></figure>
 </li>
@@ -363,102 +350,69 @@
 </ul>
 </li>
 </ul>
-</li>
-</ol>
-<h2 id="安装MySql"><a href="#安装MySql" class="headerlink" title="安装MySql"></a>安装MySql</h2><ol>
-<li><p>使用wget命令下载mysql(5.7版本)</p>
-<ul>
+<h2 id="3-安装MySql"><a href="#3-安装MySql" class="headerlink" title="3. 安装MySql"></a>3. 安装MySql</h2><h3 id="1-使用wget命令下载mysql-5-7版本"><a href="#1-使用wget命令下载mysql-5-7版本" class="headerlink" title="1. 使用wget命令下载mysql(5.7版本)"></a>1. 使用wget命令下载mysql(5.7版本)</h3><ul>
 <li><p>先进入<code>/usr/local</code>,然后输入以下命令</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$wget</span> https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.20-linux-glibc2.12-x86_64.tar.gz</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ wget https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.20-linux-glibc2.12-x86_64.tar.gz</span><br></pre></td></tr></table></figure>
+
 </li>
 </ul>
-</li>
-<li><p>解压mysql压缩包，移动到mysql文件夹中</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$tar</span> zxvf mysql-5.7.20-linux-glibc2.12-x86_64.tar.gz</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>初始化mysql</p>
-<ul>
+<h3 id="2-解压mysql压缩包，移动到mysql文件夹中"><a href="#2-解压mysql压缩包，移动到mysql文件夹中" class="headerlink" title="2. 解压mysql压缩包，移动到mysql文件夹中"></a>2. 解压mysql压缩包，移动到mysql文件夹中</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$tar</span> zxvf mysql-5.7.20-linux-glibc2.12-x86_64.tar.gz</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-初始化mysql"><a href="#3-初始化mysql" class="headerlink" title="3. 初始化mysql"></a>3. 初始化mysql</h3><ul>
 <li><p>新建用户组</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$groupadd</span> mysql</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ groupadd mysql</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>把mysql用户加入到用户组中</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$useradd</span> -r -g mysql mysql</span><br></pre></td></tr></table></figure>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ useradd -r -g mysql mysql</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>创建目录并授权</p>
-  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$mkdir</span> data mysql-file</span><br><span class="line"><span class="variable">$chown</span> -R mysql</span><br><span class="line"><span class="variable">$chgrp</span> -R mysql</span><br></pre></td></tr></table></figure>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir data mysql-file</span><br><span class="line">$ chown -R mysql</span><br><span class="line">$ chgrp -R mysql</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>初始化</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$bin</span>/mysqld --initialize --user=mysql</span><br></pre></td></tr></table></figure>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ bin/mysqld --initialize --user=mysql</span><br></pre></td></tr></table></figure>
 <p> 若报错：</p>
  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bin/mysqld: error <span class="keyword">while</span> loading shared libraries: libaio.so.1: cannot open shared object file: No such file or directory</span><br></pre></td></tr></table></figure>
 <p>解决办法：</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$yum</span> install libaio</span><br></pre></td></tr></table></figure>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ yum install libaio</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>临时密钥：root@localhost后内容edDd9RjTV6%i</p>
 </li>
 <li><p>生成RSA密钥</p>
 </li>
 <li><p>授予独写权限</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$chown</span> -R root .</span><br><span class="line"><span class="variable">$chown</span> -R mysql data mysql-files</span><br></pre></td></tr></table></figure>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ chown -R root .</span><br><span class="line">$ chown -R mysql data mysql-files</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>添加到Mysql启动脚本到系统服务</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$cp</span> support-files/mysql.server /etc/init.d/mysql.server</span><br></pre></td></tr></table></figure>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cp support-files/mysql.server /etc/init.d/mysql.server</span><br></pre></td></tr></table></figure>
+
 </li>
 </ul>
-</li>
-<li><p>启动MySql服务</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$service</span> mysql.server start</span><br></pre></td></tr></table></figure>
+<h3 id="4-启动MySql服务"><a href="#4-启动MySql服务" class="headerlink" title="4. 启动MySql服务"></a>4. 启动MySql服务</h3>   <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ service mysql.server start</span><br></pre></td></tr></table></figure>
 
-<p>若报错：</p>
-<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mysqld_safe <span class="keyword">error</span>: <span class="built_in">log</span>-<span class="keyword">error</span> <span class="keyword">set</span> <span class="keyword">to</span> '/var/<span class="built_in">log</span>/mariadb/mariadb.<span class="built_in">log</span>', however <span class="built_in">file</span> don't exists. Create writable <span class="keyword">for</span> user 'mysql'.</span><br><span class="line">The server quit <span class="keyword">without</span> updating PID <span class="built_in">file</span> (/var/lib/mysql/i[FAILED]<span class="number">50</span>wj90m4drpoxZ.pid).</span><br></pre></td></tr></table></figure>
+<p>   若报错：</p>
+   <figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mysqld_safe <span class="keyword">error</span>: <span class="built_in">log</span>-<span class="keyword">error</span> <span class="keyword">set</span> <span class="keyword">to</span> '/var/<span class="built_in">log</span>/mariadb/mariadb.<span class="built_in">log</span>', however <span class="built_in">file</span> don't exists. Create writable <span class="keyword">for</span> user 'mysql'.</span><br><span class="line">The server quit <span class="keyword">without</span> updating PID <span class="built_in">file</span> (/var/lib/mysql/i[FAILED]<span class="number">50</span>wj90m4drpoxZ.pid).</span><br></pre></td></tr></table></figure>
 
-<p> 解决：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$mkdir</span> /var/<span class="built_in">log</span>/mariadb</span><br><span class="line"><span class="variable">$touch</span> /var/<span class="built_in">log</span>/mariadb/mariadb.log</span><br><span class="line"><span class="variable">$chown</span> -R mysql:mysql /var/<span class="built_in">log</span>/mariadb</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>登录MySQL，密码是3中的密码</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/<span class="built_in">local</span>/mysql/bin/mysql -uroot -p</span><br></pre></td></tr></table></figure>
+<p>   解决：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir /var/<span class="built_in">log</span>/mariadb</span><br><span class="line">$ touch /var/<span class="built_in">log</span>/mariadb/mariadb.log</span><br><span class="line">$ chown -R mysql:mysql /var/<span class="built_in">log</span>/mariadb</span><br></pre></td></tr></table></figure>
 
-<p> 若报错：</p>
-<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Can't connect <span class="keyword">to</span> <span class="keyword">local</span> MySQL server <span class="keyword">through</span> socket '/tmp/mysql.sock'</span><br></pre></td></tr></table></figure>
+<h3 id="5-登录MySQL，密码是3中的密码"><a href="#5-登录MySQL，密码是3中的密码" class="headerlink" title="5. 登录MySQL，密码是3中的密码"></a>5. 登录MySQL，密码是3中的密码</h3>   <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ /usr/<span class="built_in">local</span>/mysql/bin/mysql -uroot -p</span><br></pre></td></tr></table></figure>
 
-<p>解决办法：修改<code>/etc/my.cnf</code></p>
-<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">[mysqld]</span></span><br><span class="line"><span class="attr">datadir</span>=/var/lib/mysql</span><br><span class="line"><span class="comment">#socket=/var/lib/mysql/mysql.sock</span></span><br><span class="line"><span class="attr">socket</span>=/tmp/mysql.sock</span><br></pre></td></tr></table></figure>
-
+<p>   若报错：<br>   <figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Can't connect <span class="keyword">to</span> <span class="keyword">local</span> MySQL server <span class="keyword">through</span> socket '/tmp/mysql.sock'</span><br></pre></td></tr></table></figure></p>
+<p>   解决办法：修改<code>/etc/my.cnf</code><br>   <figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">[mysqld]</span></span><br><span class="line"><span class="attr">datadir</span>=/var/lib/mysql</span><br><span class="line"><span class="comment">#socket=/var/lib/mysql/mysql.sock</span></span><br><span class="line"><span class="attr">socket</span>=/tmp/mysql.sock</span><br></pre></td></tr></table></figure></p>
 <ul>
-<li>再次登录,密码同上<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$service</span> mysql.server start</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-</li>
-<li><p>设置MySQL密码</p>
- <figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; <span class="keyword">set</span> <span class="keyword">password</span>=<span class="keyword">password</span>(<span class="string">'123456'</span>);</span><br><span class="line"> Query OK, <span class="number">0</span> <span class="keyword">rows</span> affected, <span class="number">1</span> <span class="built_in">warning</span> (<span class="number">0.00</span> sec)/</span><br><span class="line"> mysql&gt; flush <span class="keyword">privileges</span>;</span><br></pre></td></tr></table></figure>
-<p> Query OK, 0 rows affected (0.01 sec)<br> mysql&gt; exit;<br> Bye</p>
- <figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">    </span><br><span class="line"><span class="number">7</span>. 再次登录</span><br><span class="line">   ```<span class="keyword">bash </span></span><br><span class="line">   $/usr/local/mysql/<span class="keyword">bin/mysql </span>-uroot -p</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>授予权限，记得刷新权限。</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">GRANT</span> <span class="keyword">ALL</span> <span class="keyword">PRIVILEGES</span> <span class="keyword">ON</span> *.* <span class="keyword">TO</span> <span class="string">'root'</span>@<span class="string">'%'</span> <span class="keyword">IDENTIFIED</span> <span class="keyword">BY</span> <span class="string">'root'</span> <span class="keyword">WITH</span> <span class="keyword">GRANT</span> <span class="keyword">OPTION</span>;<span class="keyword">FLUSH</span> <span class="keyword">PRIVILEGES</span>;</span><br></pre></td></tr></table></figure>
+<li>再次登录,密码同上<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ service mysql.server start</span><br></pre></td></tr></table></figure>
 
 </li>
-</ol>
-<h2 id="打包web项目"><a href="#打包web项目" class="headerlink" title="打包web项目"></a>打包web项目</h2><ol>
-<li><p>先修改jdbc.properties文件的url 为下面的。将192.168.44.128换成服务器ip</p>
-<figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">url=<span class="string">jdbc:</span><span class="string">mysql:</span><span class="comment">//192.168.44.128:3306/further?useUnicode=yes&amp;characterEncoding=utf8</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Project-&gt;Artifacts-&gt;增加webApplication:Exploded 选在项目基础上</p>
-</li>
-<li><p>Project-&gt;Artifacts-&gt;增加webApplication:Archive 选在2的基础上</p>
-</li>
-<li><p>发现有Create Manifest的提示。点击，默认创建即可。然后点击apply和ok</p>
-</li>
-<li><p>重新build项目。Build-&gt;Build Artifacts-&gt;All Artifacts-&gt;build</p>
-</li>
-<li><p>创建好后进入项目文件夹out/artifacts/项目名_war/</p>
-</li>
-<li><p>将.war文件传至服务器的/usr/locol/tomcat/webapps下。进入服务器后重启tomcat会自动解压</p>
-</li>
-<li><p>访问http://服务器ip:8080/项目名</p>
-</li>
-</ol>
-<p>这个时候所写的项目已成功部署，可以通过访问了。</p>
+</ul>
+<h3 id="6-设置MySQL密码"><a href="#6-设置MySQL密码" class="headerlink" title="6. 设置MySQL密码"></a>6. 设置MySQL密码</h3><figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; <span class="keyword">set</span> <span class="keyword">password</span>=<span class="keyword">password</span>(<span class="string">'123456'</span>);</span><br><span class="line">Query OK, <span class="number">0</span> <span class="keyword">rows</span> affected, <span class="number">1</span> <span class="built_in">warning</span> (<span class="number">0.00</span> sec)/</span><br><span class="line">mysql&gt; flush <span class="keyword">privileges</span>;</span><br></pre></td></tr></table></figure>
+<p>Query OK, 0 rows affected (0.01 sec)<br>mysql&gt; exit;<br>Bye</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">    </span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">## 7. 再次登录</span></span></span><br><span class="line">   ``` bash </span><br><span class="line"><span class="meta">   $</span><span class="bash"> /usr/<span class="built_in">local</span>/mysql/bin/mysql -uroot -p</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="8-授予权限，记得刷新权限。"><a href="#8-授予权限，记得刷新权限。" class="headerlink" title="8. 授予权限，记得刷新权限。"></a>8. 授予权限，记得刷新权限。</h3>   <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">GRANT</span> <span class="keyword">ALL</span> <span class="keyword">PRIVILEGES</span> <span class="keyword">ON</span> *.* <span class="keyword">TO</span> <span class="string">'root'</span>@<span class="string">'%'</span> <span class="keyword">IDENTIFIED</span> <span class="keyword">BY</span> <span class="string">'root'</span> <span class="keyword">WITH</span> <span class="keyword">GRANT</span> <span class="keyword">OPTION</span>;<span class="keyword">FLUSH</span> <span class="keyword">PRIVILEGES</span>;</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-打包web项目"><a href="#4-打包web项目" class="headerlink" title="4. 打包web项目"></a>4. 打包web项目</h2><h3 id="1-先修改jdbc-properties文件的url-为下面的。将192-168-44-128换成服务器ip"><a href="#1-先修改jdbc-properties文件的url-为下面的。将192-168-44-128换成服务器ip" class="headerlink" title="1. 先修改jdbc.properties文件的url 为下面的。将192.168.44.128换成服务器ip"></a>1. 先修改jdbc.properties文件的url 为下面的。将192.168.44.128换成服务器ip</h3><figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">url</span>=jdbc:mysql://<span class="number">192.168</span>.<span class="number">44.128</span>:<span class="number">3306</span>/further?useUnicode=<span class="literal">yes</span>&amp;</span><br><span class="line"><span class="attr">characterEncoding</span>=utf8</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-Project-gt-Artifacts-gt-增加webApplication-Exploded-选在项目基础上"><a href="#2-Project-gt-Artifacts-gt-增加webApplication-Exploded-选在项目基础上" class="headerlink" title="2. Project-&gt;Artifacts-&gt;增加webApplication:Exploded 选在项目基础上"></a>2. Project-&gt;Artifacts-&gt;增加webApplication:Exploded 选在项目基础上</h3><h3 id="3-Project-gt-Artifacts-gt-增加webApplication-Archive-选在2的基础上"><a href="#3-Project-gt-Artifacts-gt-增加webApplication-Archive-选在2的基础上" class="headerlink" title="3. Project-&gt;Artifacts-&gt;增加webApplication:Archive 选在2的基础上"></a>3. Project-&gt;Artifacts-&gt;增加webApplication:Archive 选在2的基础上</h3><h3 id="4-发现有Create-Manifest的提示。点击，默认创建即可。然后点击apply和ok"><a href="#4-发现有Create-Manifest的提示。点击，默认创建即可。然后点击apply和ok" class="headerlink" title="4. 发现有Create Manifest的提示。点击，默认创建即可。然后点击apply和ok"></a>4. 发现有Create Manifest的提示。点击，默认创建即可。然后点击apply和ok</h3><h3 id="5-重新build项目。Build-gt-Build-Artifacts-gt-All-Artifacts-gt-build"><a href="#5-重新build项目。Build-gt-Build-Artifacts-gt-All-Artifacts-gt-build" class="headerlink" title="5. 重新build项目。Build-&gt;Build Artifacts-&gt;All Artifacts-&gt;build"></a>5. 重新build项目。Build-&gt;Build Artifacts-&gt;All Artifacts-&gt;build</h3><h3 id="6-创建好后进入项目文件夹out-artifacts-项目名-war"><a href="#6-创建好后进入项目文件夹out-artifacts-项目名-war" class="headerlink" title="6. 创建好后进入项目文件夹out/artifacts/项目名_war/"></a>6. 创建好后进入项目文件夹out/artifacts/项目名_war/</h3><h3 id="7-将-war文件传至服务器的-usr-locol-tomcat-webapps下。进入服务器后重启tomcat会自动解压"><a href="#7-将-war文件传至服务器的-usr-locol-tomcat-webapps下。进入服务器后重启tomcat会自动解压" class="headerlink" title="7. 将.war文件传至服务器的/usr/locol/tomcat/webapps下。进入服务器后重启tomcat会自动解压"></a>7. 将.war文件传至服务器的/usr/locol/tomcat/webapps下。进入服务器后重启tomcat会自动解压</h3><h3 id="8-访问http-服务器ip-8080-项目名"><a href="#8-访问http-服务器ip-8080-项目名" class="headerlink" title="8. 访问http://服务器ip:8080/项目名"></a>8. 访问http://服务器ip:8080/项目名</h3><p>这个时候所写的项目已成功部署，可以通过访问了。</p>
 
     </div>
 
@@ -563,7 +517,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#前言"><span class="nav-text">前言</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装JDK"><span class="nav-text">安装JDK</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Tomcat"><span class="nav-text">安装Tomcat</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装MySql"><span class="nav-text">安装MySql</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#打包web项目"><span class="nav-text">打包web项目</span></a></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#前言"><span class="nav-text">前言</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-安装JDK"><span class="nav-text">1. 安装JDK</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-服务器安装JDK-1-8"><span class="nav-text">1. 服务器安装JDK 1.8</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-配置环境变量"><span class="nav-text">2. 配置环境变量</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-安装Tomcat"><span class="nav-text">2. 安装Tomcat</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-本机电脑下载tomcat"><span class="nav-text">1. 本机电脑下载tomcat</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-将tomecat-tar-gz下载到-usr-local或者先cd-usr-local"><span class="nav-text">2. 将tomecat.tar.gz下载到&#x2F;usr&#x2F;local或者先cd &#x2F;usr&#x2F;local</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-解压刚刚下载的文件，并且重命名为tomcat"><span class="nav-text">3. 解压刚刚下载的文件，并且重命名为tomcat</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-启动tomcat"><span class="nav-text">4. 启动tomcat</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-不能访问tomcat的相关解决办法"><span class="nav-text">5. 不能访问tomcat的相关解决办法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-安装MySql"><span class="nav-text">3. 安装MySql</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-使用wget命令下载mysql-5-7版本"><span class="nav-text">1. 使用wget命令下载mysql(5.7版本)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-解压mysql压缩包，移动到mysql文件夹中"><span class="nav-text">2. 解压mysql压缩包，移动到mysql文件夹中</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-初始化mysql"><span class="nav-text">3. 初始化mysql</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-启动MySql服务"><span class="nav-text">4. 启动MySql服务</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-登录MySQL，密码是3中的密码"><span class="nav-text">5. 登录MySQL，密码是3中的密码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-设置MySQL密码"><span class="nav-text">6. 设置MySQL密码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-授予权限，记得刷新权限。"><span class="nav-text">8. 授予权限，记得刷新权限。</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-打包web项目"><span class="nav-text">4. 打包web项目</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-先修改jdbc-properties文件的url-为下面的。将192-168-44-128换成服务器ip"><span class="nav-text">1. 先修改jdbc.properties文件的url 为下面的。将192.168.44.128换成服务器ip</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Project-gt-Artifacts-gt-增加webApplication-Exploded-选在项目基础上"><span class="nav-text">2. Project-&gt;Artifacts-&gt;增加webApplication:Exploded 选在项目基础上</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-Project-gt-Artifacts-gt-增加webApplication-Archive-选在2的基础上"><span class="nav-text">3. Project-&gt;Artifacts-&gt;增加webApplication:Archive 选在2的基础上</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-发现有Create-Manifest的提示。点击，默认创建即可。然后点击apply和ok"><span class="nav-text">4. 发现有Create Manifest的提示。点击，默认创建即可。然后点击apply和ok</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-重新build项目。Build-gt-Build-Artifacts-gt-All-Artifacts-gt-build"><span class="nav-text">5. 重新build项目。Build-&gt;Build Artifacts-&gt;All Artifacts-&gt;build</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-创建好后进入项目文件夹out-artifacts-项目名-war"><span class="nav-text">6. 创建好后进入项目文件夹out&#x2F;artifacts&#x2F;项目名_war&#x2F;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-将-war文件传至服务器的-usr-locol-tomcat-webapps下。进入服务器后重启tomcat会自动解压"><span class="nav-text">7. 将.war文件传至服务器的&#x2F;usr&#x2F;locol&#x2F;tomcat&#x2F;webapps下。进入服务器后重启tomcat会自动解压</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-访问http-服务器ip-8080-项目名"><span class="nav-text">8. 访问http:&#x2F;&#x2F;服务器ip:8080&#x2F;项目名</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
