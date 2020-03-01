@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>iotwd&#39;s Blog</title>
   
-  <subtitle>用心看未来，一起走过寒冬。</subtitle>
+  <subtitle>普普通通，脚踏实地。</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wdxxy.net/"/>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Start My Blog Trip - Power By Hexo</title>
-    <link href="https://wdxxy.net/uncategorized/%E5%BC%80%E5%A7%8Bblog%E4%B9%8B%E6%97%85/"/>
-    <id>https://wdxxy.net/uncategorized/%E5%BC%80%E5%A7%8Bblog%E4%B9%8B%E6%97%85/</id>
+    <link href="https://wdxxy.net/posts/9440.html"/>
+    <id>https://wdxxy.net/posts/9440.html</id>
     <published>2020-02-07T12:41:26.425Z</published>
     <updated>2020-02-09T23:43:47.577Z</updated>
     
@@ -39,8 +39,8 @@
   
   <entry>
     <title>Windows使用cgi网络编程（python）</title>
-    <link href="https://wdxxy.net/python/Windows%E4%BD%BF%E7%94%A8cgi%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B%EF%BC%88python%EF%BC%89/"/>
-    <id>https://wdxxy.net/python/Windows%E4%BD%BF%E7%94%A8cgi%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B%EF%BC%88python%EF%BC%89/</id>
+    <link href="https://wdxxy.net/posts/56022.html"/>
+    <id>https://wdxxy.net/posts/56022.html</id>
     <published>2019-12-14T03:31:40.000Z</published>
     <updated>2020-02-09T23:42:41.779Z</updated>
     
@@ -64,8 +64,8 @@
   
   <entry>
     <title>将Java web项目部署到Linux云服务器（Centos7为例）</title>
-    <link href="https://wdxxy.net/Java-web/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E9%83%A8%E7%BD%B2war%E5%8C%85%E5%88%B0linux%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    <id>https://wdxxy.net/Java-web/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E9%83%A8%E7%BD%B2war%E5%8C%85%E5%88%B0linux%E6%9C%8D%E5%8A%A1%E5%99%A8/</id>
+    <link href="https://wdxxy.net/posts/5596.html"/>
+    <id>https://wdxxy.net/posts/5596.html</id>
     <published>2019-11-15T03:31:40.000Z</published>
     <updated>2020-02-09T23:41:46.106Z</updated>
     
@@ -89,8 +89,8 @@
   
   <entry>
     <title>Markdown基本语法</title>
-    <link href="https://wdxxy.net/uncategorized/markdown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/"/>
-    <id>https://wdxxy.net/uncategorized/markdown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</id>
+    <link href="https://wdxxy.net/posts/18133.html"/>
+    <id>https://wdxxy.net/posts/18133.html</id>
     <published>2019-11-09T15:20:28.000Z</published>
     <updated>2020-02-09T23:43:13.511Z</updated>
     
