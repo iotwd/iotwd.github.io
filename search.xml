@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>introduce of iot</title>
+    <title>Introduce of iot</title>
     <url>/posts/introduce%20of%20iot.html</url>
-    <content><![CDATA[<h3 id="物联网的相关介绍"><a href="#物联网的相关介绍" class="headerlink" title="物联网的相关介绍"></a>物联网的相关介绍</h3><p>通过射频识别（RFID）装置、传感器、 全球定位系统等信息传感设备，按照约定的协议，把地球上的任何具体事物同互联网连接起来，并进行信息交换和通信，实现识别、定位、监控、控制和管理的一种网络.</p>
+    <content><![CDATA[<ul>
+<li>物联网：</li>
+</ul>
+<p>通过射频识别（RFID）装置、传感器、 全球定位系统等信息传感设备，按照约定的协议，把地球上的任何具体事物同互联网连接起来，并进行信息交换和通信，实现识别、定位、监控、控制和管理的一种网络。</p>
 <a id="more"></a>
 
-<h2 id="1-定义"><a href="#1-定义" class="headerlink" title="1. 定义"></a>1. 定义</h2><ul>
+<h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><ul>
 <li>物：<ul>
 <li>有相应的接收器</li>
 <li>发送器</li>
@@ -156,37 +159,42 @@
     <title>Start My Blog Trip - Power By Hexo</title>
     <url>/posts/start-my-blog.html</url>
     <content><![CDATA[<hr>
-<h3 id="Life-is-a-choice-Bad-things-happen-to-everybody-How-you-deal-with-it-that-matters"><a href="#Life-is-a-choice-Bad-things-happen-to-everybody-How-you-deal-with-it-that-matters" class="headerlink" title="Life is a choice, Bad things happen to everybody, How you deal with it that matters."></a>Life is a choice, Bad things happen to everybody, How you deal with it that matters.</h3><hr>
-<p>通过写博客将自己在生活学习中的一些知识和经验记录下来，不断地积累知识，总结经验，来记录生活吧。除此之外，更重要的是能够保持写作，在写作中保持思考…..</p>
+<p> <strong>Life is a choice, Bad things happen to everybody, How you deal with it that matters.</strong></p>
+<hr>
+<ul>
+<li>前言： </li>
+<li>通过写博客将自己在生活学习中的一些知识和经验记录下来，不断地积累知识，总结经验，来记录生活吧。除此之外，更重要的是能够保持写作，在写作中保持思考…..</li>
+</ul>
 <a id="more"></a>
 
 
-<h2 id="1-为何要搭建自己的博客？"><a href="#1-为何要搭建自己的博客？" class="headerlink" title="1. 为何要搭建自己的博客？"></a>1. 为何要搭建自己的博客？</h2><h3 id="1-1-记录"><a href="#1-1-记录" class="headerlink" title="1.1 记录"></a>1.1 记录</h3><p>记录是一件美好的事情，而我们却常常忽略。</p>
+<h2 id="为何要搭建自己的博客？"><a href="#为何要搭建自己的博客？" class="headerlink" title="为何要搭建自己的博客？"></a>为何要搭建自己的博客？</h2><h3 id="记录"><a href="#记录" class="headerlink" title="记录"></a>记录</h3><p>记录是一件美好的事情，而我们却常常忽略。</p>
 <p>直到有一天想去回忆以前发生的事情时，却发现很多东西已经在记忆中变得模糊，当别人提及时自己甚至不曾记得它发生过。慢慢地，一切似乎都变得不重要起来。 长大了却发现时间过得太快，父母逐渐白了头发，长辈的眼睛逐渐变得浑浊，回想曾与过世的亲人相处的美好时光，那仅存的记忆却变得那么弥足珍贵。</p>
 <p>记录，让时间过得慢些吧。</p>
-<h3 id="1-2-分享"><a href="#1-2-分享" class="headerlink" title="1.2 分享"></a>1.2 分享</h3><p>分享是一个喜悦的过程，而我们却逐渐封闭。</p>
+<h3 id="分享"><a href="#分享" class="headerlink" title="分享"></a>分享</h3><p>分享是一个喜悦的过程，而我们却逐渐封闭。</p>
 <p>分享，让一切逐渐有意义起来。</p>
-<h3 id="1-3-总结"><a href="#1-3-总结" class="headerlink" title="1.3 总结"></a>1.3 总结</h3><p>善于总结，乐于进步。</p>
-<h2 id="2-如何安装Hexo博客？"><a href="#2-如何安装Hexo博客？" class="headerlink" title="2. 如何安装Hexo博客？"></a>2. 如何安装Hexo博客？</h2><h3 id="2-1-安装node-js"><a href="#2-1-安装node-js" class="headerlink" title="2.1 安装node.js"></a>2.1 安装node.js</h3><p>根据系统安装相应的版本。</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>善于总结，乐于进步。</p>
+<h2 id="如何安装Hexo博客？"><a href="#如何安装Hexo博客？" class="headerlink" title="如何安装Hexo博客？"></a>如何安装Hexo博客？</h2><h3 id="安装node-js"><a href="#安装node-js" class="headerlink" title="安装node.js"></a>安装node.js</h3><p>根据系统安装相应的版本。</p>
 <p>下载地址：<a href="https://nodejs.org/en/" target="_blank" rel="noopener">node.js</a></p>
-<h3 id="2-2-安装git"><a href="#2-2-安装git" class="headerlink" title="2.2 安装git"></a>2.2 安装git</h3><p>根据系统安装相应的版本。</p>
+<h3 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h3><p>根据系统安装相应的版本。</p>
 <p>下载地址：<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">git</a></p>
-<h3 id="2-3-安装Hexo"><a href="#2-3-安装Hexo" class="headerlink" title="2.3 安装Hexo"></a>2.3 安装Hexo</h3><p>在node.js和git安装完成后，即可使用 npm 安装 Hexo。</p>
+<h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><p>在node.js和git安装完成后，即可使用 npm 安装 Hexo。</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
 
-<h3 id="2-4-本地搭建hexo"><a href="#2-4-本地搭建hexo" class="headerlink" title="2.4 本地搭建hexo"></a>2.4 本地搭建hexo</h3><ul>
+
+<h3 id="本地搭建hexo"><a href="#本地搭建hexo" class="headerlink" title="本地搭建hexo"></a>本地搭建hexo</h3><ul>
 <li>新建文件夹，例如blog</li>
 <li>进入该文件夹，输入hexo init </li>
 <li>运行hexo s，浏览器输入localhost:4000，可看见搭建成功。</li>
 </ul>
-<h3 id="2-5-将博客与GitHub关联"><a href="#2-5-将博客与GitHub关联" class="headerlink" title="2.5 将博客与GitHub关联"></a>2.5 将博客与GitHub关联</h3><ul>
+<h3 id="将博客与GitHub关联"><a href="#将博客与GitHub关联" class="headerlink" title="将博客与GitHub关联"></a>将博客与GitHub关联</h3><ul>
 <li>创建一个名字为username.github.io的仓库。</li>
 <li>打开blog/_config.yml，将deploy改为如下的：<figure class="highlight less"><table><tr><td class="code"><pre><span class="line"><span class="attribute">deploy</span>:</span><br><span class="line">  <span class="attribute">type</span>: git </span><br><span class="line">  <span class="attribute">repo</span>: <span class="attribute">https</span>:<span class="comment">//github.com/username/username.github.io.git</span></span><br><span class="line">  <span class="attribute">branch</span>: master</span><br></pre></td></tr></table></figure></li>
 <li>运行： hexo g（生成静态文件）</li>
 <li>运行：hexo d（将本地推送至GitHub）</li>
 <li>打开浏览器访问<a href="http://username.github.io.git" target="_blank" rel="noopener"></a></li>
 </ul>
-<h3 id="2-6-博客绑定域名"><a href="#2-6-博客绑定域名" class="headerlink" title="2.6 博客绑定域名"></a>2.6 博客绑定域名</h3><p>这时博客已经搭建好，使用域名访问比较好，也可以不用域名。</p>
+<h3 id="博客绑定域名"><a href="#博客绑定域名" class="headerlink" title="博客绑定域名"></a>博客绑定域名</h3><p>这时博客已经搭建好，使用域名访问比较好，也可以不用域名。</p>
 <ul>
 <li>申请域名</li>
 <li>将域名解析到博客的地址。</li>
@@ -194,7 +202,7 @@
 <li>运行 hexo g &amp;&amp; hexo d</li>
 <li>进入浏览器访问你的域名即可。</li>
 </ul>
-<h2 id="3-如何使用Hexo博客？"><a href="#3-如何使用Hexo博客？" class="headerlink" title="3. 如何使用Hexo博客？"></a>3. 如何使用Hexo博客？</h2><p>此时博客已经搭建完毕，下面就可以更新博客内容了。</p>
+<h2 id="如何使用Hexo博客？"><a href="#如何使用Hexo博客？" class="headerlink" title="如何使用Hexo博客？"></a>如何使用Hexo博客？</h2><p>此时博客已经搭建完毕，下面就可以更新博客内容了。</p>
 <h3 id="新建一篇博客"><a href="#新建一篇博客" class="headerlink" title="新建一篇博客"></a>新建一篇博客</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo n <span class="string">"文章名"</span></span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
@@ -207,8 +215,8 @@
 <h3 id="发布到站点"><a href="#发布到站点" class="headerlink" title="发布到站点"></a>发布到站点</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-<h2 id="4-如何进行主题美化？"><a href="#4-如何进行主题美化？" class="headerlink" title="4. 如何进行主题美化？"></a>4. 如何进行主题美化？</h2><p>网上有大量的教程，可自行搜索。</p>
-<h2 id="5-参考文章："><a href="#5-参考文章：" class="headerlink" title="5. 参考文章："></a>5. 参考文章：</h2><p><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">hexo 中文</a></p>
+<h2 id="如何进行主题美化？"><a href="#如何进行主题美化？" class="headerlink" title="如何进行主题美化？"></a>如何进行主题美化？</h2><p>网上有大量的教程，可自行搜索。</p>
+<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><p><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">hexo 中文</a></p>
 <p><a href="https://thief.one/%2F2017%2F03%2F03%2FHexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B%2F" target="_blank" rel="noopener">nmask’s blog 配置美化</a></p>
 <p><a href="http://www.dragonstyle.win/3358042383.html" target="_blank" rel="noopener">Dragonstyle’s Home Next主题美化</a></p>
 ]]></content>
@@ -216,12 +224,15 @@
   <entry>
     <title>Windows使用cgi网络编程（python）</title>
     <url>/posts/cgi-python-windows.html</url>
-    <content><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>python课程作业要求实现cgi访问，由于使用的是Windows10，而网上搜索的教程都是Linux/unix平台的教程。虽然不同平台上的方法大致相同，但是还是有点坑的，这里记录一下Windows平台在配置文件时的过程。</p>
+    <content><![CDATA[<ul>
+<li>前言</li>
+</ul>
+<p>python课程作业要求实现cgi访问，由于使用的是Windows10，而网上搜索的教程都是Linux/unix平台的教程。虽然不同平台上的方法大致相同，但是还是有点坑的，这里记录一下Windows平台在配置文件时的过程。</p>
 <a id="more"></a>
 
-<h2 id="1-查看python安装路径"><a href="#1-查看python安装路径" class="headerlink" title="1. 查看python安装路径"></a>1. 查看python安装路径</h2><p>  在cmd模式下输入<br>  <code>where python</code></p>
+<h2 id="查看python安装路径"><a href="#查看python安装路径" class="headerlink" title="查看python安装路径"></a>查看python安装路径</h2><p>  在cmd模式下输入<br>  <code>where python</code></p>
 <p>  回车后发现安装路径为：<br>  <figure class="highlight taggerscript"><table><tr><td class="code"><pre><span class="line">D:<span class="symbol">\P</span>rogram Files<span class="symbol">\p</span>ython3.7<span class="symbol">\p</span>ython.exe</span><br><span class="line"></span><br><span class="line">C:<span class="symbol">\U</span>sers<span class="symbol">\U</span>sername<span class="symbol">\A</span>ppData<span class="symbol">\L</span>ocal<span class="symbol">\M</span>icrosoft<span class="symbol">\W</span>indowsApps<span class="symbol">\p</span>ython.exe</span><br></pre></td></tr></table></figure></p>
-<h2 id="2-进入python安装路径"><a href="#2-进入python安装路径" class="headerlink" title="2. 进入python安装路径"></a>2. 进入python安装路径</h2><ul>
+<h2 id="进入python安装路径"><a href="#进入python安装路径" class="headerlink" title="进入python安装路径"></a>进入python安装路径</h2><ul>
 <li><p>切换目录</p>
 <ul>
 <li>输入<code>D:</code>进入D盘</li>
@@ -239,7 +250,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="3-在python模块中使用http-server直接运行一个临时web服务器"><a href="#3-在python模块中使用http-server直接运行一个临时web服务器" class="headerlink" title="3. 在python模块中使用http.server直接运行一个临时web服务器"></a>3. 在python模块中使用http.server直接运行一个临时web服务器</h2><ul>
+<h2 id="在python模块中使用http-server直接运行一个临时web服务器"><a href="#在python模块中使用http-server直接运行一个临时web服务器" class="headerlink" title="在python模块中使用http.server直接运行一个临时web服务器"></a>在python模块中使用http.server直接运行一个临时web服务器</h2><ul>
 <li><p>在cmd中python安装文件夹输入命令:</p>
 <figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">D</span>:\<span class="selector-tag">Program</span> <span class="selector-tag">Files</span>\<span class="selector-tag">python3</span><span class="selector-class">.7</span>&gt;<span class="selector-tag">python</span> <span class="selector-tag">-m</span> <span class="selector-tag">http</span><span class="selector-class">.server</span> <span class="selector-tag">--cgi</span></span><br></pre></td></tr></table></figure>
 
@@ -248,7 +259,7 @@
 
 </li>
 </ul>
-<h2 id="4-编辑-html文件和-py文件。可参考菜鸟教程"><a href="#4-编辑-html文件和-py文件。可参考菜鸟教程" class="headerlink" title="4. 编辑.html文件和.py文件。可参考菜鸟教程"></a>4. 编辑.html文件和.py文件。可参考<a href="https://www.runoob.com/python/python-cgi.html" target="_blank" rel="noopener">菜鸟教程</a></h2><h2 id="5-浏览器访问"><a href="#5-浏览器访问" class="headerlink" title="5. 浏览器访问"></a>5. 浏览器访问</h2><ul>
+<h2 id="编辑-html文件和-py文件。可参考菜鸟教程"><a href="#编辑-html文件和-py文件。可参考菜鸟教程" class="headerlink" title="编辑.html文件和.py文件。可参考菜鸟教程"></a>编辑.html文件和.py文件。可参考<a href="https://www.runoob.com/python/python-cgi.html" target="_blank" rel="noopener">菜鸟教程</a></h2><h2 id="浏览器访问"><a href="#浏览器访问" class="headerlink" title="浏览器访问"></a>浏览器访问</h2><ul>
 <li>输入地址</li>
 </ul>
 <ul>
@@ -282,17 +293,20 @@
   <entry>
     <title>将Java web项目部署到Linux云服务器（Centos7为例）</title>
     <url>/posts/java-web-deploy-to-ecs.html</url>
-    <content><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><ul>
+    <content><![CDATA[<ul>
+<li>前言<ul>
 <li>CSDN上有些教程很零散，对我这种小白不友好，在这记录一下自己在部署Java web项目的过程。环境为阿里云ecs学生机 （centos7）</li>
 <li>实践周的简单智慧医疗系统，需要在网页查询数据，显示一定的历史数据，采用java来做云端。<a id="more"></a>
 
 
 </li>
 </ul>
-<h2 id="1-安装JDK"><a href="#1-安装JDK" class="headerlink" title="1. 安装JDK"></a>1. 安装JDK</h2><h3 id="1-服务器安装JDK-1-8"><a href="#1-服务器安装JDK-1-8" class="headerlink" title="1. 服务器安装JDK 1.8"></a>1. 服务器安装JDK 1.8</h3><ul>
+</li>
+</ul>
+<h2 id="安装JDK"><a href="#安装JDK" class="headerlink" title="安装JDK"></a>安装JDK</h2><h3 id="服务器安装JDK-1-8"><a href="#服务器安装JDK-1-8" class="headerlink" title="服务器安装JDK 1.8"></a>服务器安装JDK 1.8</h3><ul>
 <li>终端输入以下代码。<br><code>$yum -y install java-1.8.0-openjdk java-1.8.0-openjdk-devel</code></li>
 </ul>
-<h3 id="2-配置环境变量"><a href="#2-配置环境变量" class="headerlink" title="2. 配置环境变量"></a>2. 配置环境变量</h3><ul>
+<h3 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h3><ul>
 <li><p>将下面的三行添加到 /etc/profile 后面</p>
    <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">export</span> JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.232.b09-0.el7_7.x86_64</span><br><span class="line"><span class="built_in">export</span> CLASSPATH=.:<span class="variable">$JAVA_HOME</span>/jre/lib/rt.jar:<span class="variable">$JAVA_HOME</span>/lib/dt.jar:<span class="variable">$JAVA_HOME</span>/lib/tools.jar</span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:<span class="variable">$JAVA_HOME</span>/</span><br></pre></td></tr></table></figure>
 </li>
@@ -301,20 +315,20 @@
 <li><p>验证是否安装成功，终端输入命令： <code>java -version</code></p>
 </li>
 </ul>
-<h2 id="2-安装Tomcat"><a href="#2-安装Tomcat" class="headerlink" title="2. 安装Tomcat"></a>2. 安装Tomcat</h2><h3 id="1-本机电脑下载tomcat"><a href="#1-本机电脑下载tomcat" class="headerlink" title="1. 本机电脑下载tomcat"></a>1. 本机电脑下载tomcat</h3><ul>
+<h2 id="安装Tomcat"><a href="#安装Tomcat" class="headerlink" title="安装Tomcat"></a>安装Tomcat</h2><h3 id="本机电脑下载tomcat"><a href="#本机电脑下载tomcat" class="headerlink" title="本机电脑下载tomcat"></a>本机电脑下载tomcat</h3><ul>
 <li><p>进入下面网址下载tomcat，最新版就可以。<br><code>https://tomcat.apache.org/download-80.cgi</code></p>
 </li>
 <li><p>本机安装配置tomcat环境，用以调试开发。</p>
 </li>
 </ul>
-<h3 id="2-将tomecat-tar-gz下载到-usr-local或者先cd-usr-local"><a href="#2-将tomecat-tar-gz下载到-usr-local或者先cd-usr-local" class="headerlink" title="2. 将tomecat.tar.gz下载到/usr/local或者先cd /usr/local"></a>2. 将tomecat.tar.gz下载到/usr/local或者先cd /usr/local</h3><ul>
+<h3 id="将tomecat-tar-gz下载到-usr-local或者先cd-usr-local"><a href="#将tomecat-tar-gz下载到-usr-local或者先cd-usr-local" class="headerlink" title="将tomecat.tar.gz下载到/usr/local或者先cd /usr/local"></a>将tomecat.tar.gz下载到/usr/local或者先cd /usr/local</h3><ul>
 <li>执行以下命令   <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget http://mirrors.shuosc.org/apache/   tomcat/tomcat-8/v8.5.24/bin/apache-tomcat-8.5.24.tar.gz</span><br></pre></td></tr></table></figure>
 
 </li>
 </ul>
-<h3 id="3-解压刚刚下载的文件，并且重命名为tomcat"><a href="#3-解压刚刚下载的文件，并且重命名为tomcat" class="headerlink" title="3. 解压刚刚下载的文件，并且重命名为tomcat"></a>3. 解压刚刚下载的文件，并且重命名为tomcat</h3>   <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ tar zxvf apache-tomcat-8.5.47.tar.gz &amp; mv apache-tomcat-8.5.47 tomcat</span><br></pre></td></tr></table></figure>
+<h3 id="解压刚刚下载的文件，并且重命名为tomcat"><a href="#解压刚刚下载的文件，并且重命名为tomcat" class="headerlink" title="解压刚刚下载的文件，并且重命名为tomcat"></a>解压刚刚下载的文件，并且重命名为tomcat</h3>   <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ tar zxvf apache-tomcat-8.5.47.tar.gz &amp; mv apache-tomcat-8.5.47 tomcat</span><br></pre></td></tr></table></figure>
 
-<h3 id="4-启动tomcat"><a href="#4-启动tomcat" class="headerlink" title="4. 启动tomcat"></a>4. 启动tomcat</h3><ul>
+<h3 id="启动tomcat"><a href="#启动tomcat" class="headerlink" title="启动tomcat"></a>启动tomcat</h3><ul>
 <li><p>终端执行命令</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ /usr/<span class="built_in">local</span>/tomcat/bin/startup.sh</span><br></pre></td></tr></table></figure>
 </li>
@@ -323,7 +337,7 @@
 
 </li>
 </ul>
-<h3 id="5-不能访问tomcat的相关解决办法"><a href="#5-不能访问tomcat的相关解决办法" class="headerlink" title="5. 不能访问tomcat的相关解决办法"></a>5. 不能访问tomcat的相关解决办法</h3><ul>
+<h3 id="不能访问tomcat的相关解决办法"><a href="#不能访问tomcat的相关解决办法" class="headerlink" title="不能访问tomcat的相关解决办法"></a>不能访问tomcat的相关解决办法</h3><ul>
 <li><p>防火墙未开启8080端口，解决如下</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[root@localhost bin]<span class="comment"># firewall-cmd --zone=public --add-port=8080/tcp --permanent</span></span><br><span class="line">[root@localhost bin]<span class="comment"># firewall-cmd --reload</span></span><br></pre></td></tr></table></figure>
 </li>
@@ -333,15 +347,15 @@
 </ul>
 </li>
 </ul>
-<h2 id="3-安装MySql"><a href="#3-安装MySql" class="headerlink" title="3. 安装MySql"></a>3. 安装MySql</h2><h3 id="1-使用wget命令下载mysql-5-7版本"><a href="#1-使用wget命令下载mysql-5-7版本" class="headerlink" title="1. 使用wget命令下载mysql(5.7版本)"></a>1. 使用wget命令下载mysql(5.7版本)</h3><ul>
+<h2 id="安装MySql"><a href="#安装MySql" class="headerlink" title="安装MySql"></a>安装MySql</h2><h3 id="使用wget命令下载mysql-5-7版本"><a href="#使用wget命令下载mysql-5-7版本" class="headerlink" title="使用wget命令下载mysql(5.7版本)"></a>使用wget命令下载mysql(5.7版本)</h3><ul>
 <li><p>先进入<code>/usr/local</code>,然后输入以下命令</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ wget https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.20-linux-glibc2.12-x86_64.tar.gz</span><br></pre></td></tr></table></figure>
 
 </li>
 </ul>
-<h3 id="2-解压mysql压缩包，移动到mysql文件夹中"><a href="#2-解压mysql压缩包，移动到mysql文件夹中" class="headerlink" title="2. 解压mysql压缩包，移动到mysql文件夹中"></a>2. 解压mysql压缩包，移动到mysql文件夹中</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="variable">$tar</span> zxvf mysql-5.7.20-linux-glibc2.12-x86_64.tar.gz</span><br></pre></td></tr></table></figure>
+<h3 id="解压mysql压缩包，移动到mysql文件夹中"><a href="#解压mysql压缩包，移动到mysql文件夹中" class="headerlink" title="解压mysql压缩包，移动到mysql文件夹中"></a>解压mysql压缩包，移动到mysql文件夹中</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="variable">$tar</span> zxvf mysql-5.7.20-linux-glibc2.12-x86_64.tar.gz</span><br></pre></td></tr></table></figure>
 
-<h3 id="3-初始化mysql"><a href="#3-初始化mysql" class="headerlink" title="3. 初始化mysql"></a>3. 初始化mysql</h3><ul>
+<h3 id="初始化mysql"><a href="#初始化mysql" class="headerlink" title="初始化mysql"></a>初始化mysql</h3><ul>
 <li><p>新建用户组</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ groupadd mysql</span><br></pre></td></tr></table></figure>
 </li>
@@ -370,7 +384,7 @@
 
 </li>
 </ul>
-<h3 id="4-启动MySql服务"><a href="#4-启动MySql服务" class="headerlink" title="4. 启动MySql服务"></a>4. 启动MySql服务</h3>   <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ service mysql.server start</span><br></pre></td></tr></table></figure>
+<h3 id="启动MySql服务"><a href="#启动MySql服务" class="headerlink" title="启动MySql服务"></a>启动MySql服务</h3>   <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ service mysql.server start</span><br></pre></td></tr></table></figure>
 
 <p>   若报错：</p>
    <figure class="highlight applescript"><table><tr><td class="code"><pre><span class="line">mysqld_safe <span class="keyword">error</span>: <span class="built_in">log</span>-<span class="keyword">error</span> <span class="keyword">set</span> <span class="keyword">to</span> '/var/<span class="built_in">log</span>/mariadb/mariadb.<span class="built_in">log</span>', however <span class="built_in">file</span> don't exists. Create writable <span class="keyword">for</span> user 'mysql'.</span><br><span class="line">The server quit <span class="keyword">without</span> updating PID <span class="built_in">file</span> (/var/lib/mysql/i[FAILED]<span class="number">50</span>wj90m4drpoxZ.pid).</span><br></pre></td></tr></table></figure>
@@ -378,7 +392,7 @@
 <p>   解决：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ mkdir /var/<span class="built_in">log</span>/mariadb</span><br><span class="line">$ touch /var/<span class="built_in">log</span>/mariadb/mariadb.log</span><br><span class="line">$ chown -R mysql:mysql /var/<span class="built_in">log</span>/mariadb</span><br></pre></td></tr></table></figure>
 
-<h3 id="5-登录MySQL，密码是3中的密码"><a href="#5-登录MySQL，密码是3中的密码" class="headerlink" title="5. 登录MySQL，密码是3中的密码"></a>5. 登录MySQL，密码是3中的密码</h3>   <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ /usr/<span class="built_in">local</span>/mysql/bin/mysql -uroot -p</span><br></pre></td></tr></table></figure>
+<h3 id="登录MySQL，密码是3中的密码"><a href="#登录MySQL，密码是3中的密码" class="headerlink" title="登录MySQL，密码是3中的密码"></a>登录MySQL，密码是3中的密码</h3>   <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ /usr/<span class="built_in">local</span>/mysql/bin/mysql -uroot -p</span><br></pre></td></tr></table></figure>
 
 <p>   若报错：<br>   <figure class="highlight applescript"><table><tr><td class="code"><pre><span class="line">Can't connect <span class="keyword">to</span> <span class="keyword">local</span> MySQL server <span class="keyword">through</span> socket '/tmp/mysql.sock'</span><br></pre></td></tr></table></figure></p>
 <p>   解决办法：修改<code>/etc/my.cnf</code><br>   <figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[mysqld]</span></span><br><span class="line"><span class="attr">datadir</span>=/var/lib/mysql</span><br><span class="line"><span class="comment">#socket=/var/lib/mysql/mysql.sock</span></span><br><span class="line"><span class="attr">socket</span>=/tmp/mysql.sock</span><br></pre></td></tr></table></figure></p>
@@ -387,15 +401,32 @@
 
 </li>
 </ul>
-<h3 id="6-设置MySQL密码"><a href="#6-设置MySQL密码" class="headerlink" title="6. 设置MySQL密码"></a>6. 设置MySQL密码</h3><figure class="highlight pgsql"><table><tr><td class="code"><pre><span class="line">mysql&gt; <span class="keyword">set</span> <span class="keyword">password</span>=<span class="keyword">password</span>(<span class="string">'123456'</span>);</span><br><span class="line">Query OK, <span class="number">0</span> <span class="keyword">rows</span> affected, <span class="number">1</span> <span class="built_in">warning</span> (<span class="number">0.00</span> sec)/</span><br><span class="line">mysql&gt; flush <span class="keyword">privileges</span>;</span><br></pre></td></tr></table></figure>
-<p>Query OK, 0 rows affected (0.01 sec)<br>mysql&gt; exit;<br>Bye</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">    </span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">## 7. 再次登录</span></span></span><br><span class="line">   ``` bash </span><br><span class="line"><span class="meta">   $</span><span class="bash"> /usr/<span class="built_in">local</span>/mysql/bin/mysql -uroot -p</span></span><br></pre></td></tr></table></figure>
+<h3 id="设置MySQL密码"><a href="#设置MySQL密码" class="headerlink" title="设置MySQL密码"></a>设置MySQL密码</h3><figure class="highlight pgsql"><table><tr><td class="code"><pre><span class="line">mysql&gt; <span class="keyword">set</span> <span class="keyword">password</span>=<span class="keyword">password</span>(<span class="string">'123456'</span>);</span><br><span class="line">Query OK, <span class="number">0</span> <span class="keyword">rows</span> affected, <span class="number">1</span> <span class="built_in">warning</span> (<span class="number">0.00</span> sec)/</span><br><span class="line">mysql&gt; flush <span class="keyword">privileges</span>;</span><br><span class="line">Query OK, <span class="number">0</span> <span class="keyword">rows</span> affected (<span class="number">0.01</span> sec)</span><br><span class="line">mysql&gt; <span class="keyword">exit</span>;</span><br><span class="line">Bye</span><br></pre></td></tr></table></figure>
 
-<h3 id="8-授予权限，记得刷新权限。"><a href="#8-授予权限，记得刷新权限。" class="headerlink" title="8. 授予权限，记得刷新权限。"></a>8. 授予权限，记得刷新权限。</h3>   <figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">GRANT</span> <span class="keyword">ALL</span> <span class="keyword">PRIVILEGES</span> <span class="keyword">ON</span> *.* <span class="keyword">TO</span> <span class="string">'root'</span>@<span class="string">'%'</span> <span class="keyword">IDENTIFIED</span> <span class="keyword">BY</span> <span class="string">'root'</span> <span class="keyword">WITH</span> <span class="keyword">GRANT</span> <span class="keyword">OPTION</span>;<span class="keyword">FLUSH</span> <span class="keyword">PRIVILEGES</span>;</span><br></pre></td></tr></table></figure>
+<h3 id="再次登录"><a href="#再次登录" class="headerlink" title="再次登录"></a>再次登录</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ /usr/<span class="built_in">local</span>/mysql/bin/mysql -uroot -p</span><br></pre></td></tr></table></figure>
 
-<h2 id="4-打包web项目"><a href="#4-打包web项目" class="headerlink" title="4. 打包web项目"></a>4. 打包web项目</h2><h3 id="1-先修改jdbc-properties文件的url-为下面的。将192-168-44-128换成服务器ip"><a href="#1-先修改jdbc-properties文件的url-为下面的。将192-168-44-128换成服务器ip" class="headerlink" title="1. 先修改jdbc.properties文件的url 为下面的。将192.168.44.128换成服务器ip"></a>1. 先修改jdbc.properties文件的url 为下面的。将192.168.44.128换成服务器ip</h3><figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="attr">url</span>=jdbc:mysql://<span class="number">192.168</span>.<span class="number">44.128</span>:<span class="number">3306</span>/further?useUnicode=<span class="literal">yes</span>&amp;</span><br><span class="line"><span class="attr">characterEncoding</span>=utf8</span><br></pre></td></tr></table></figure>
+<h3 id="授予权限，记得刷新权限。"><a href="#授予权限，记得刷新权限。" class="headerlink" title="授予权限，记得刷新权限。"></a>授予权限，记得刷新权限。</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">GRANT</span> <span class="keyword">ALL</span> <span class="keyword">PRIVILEGES</span> <span class="keyword">ON</span> *.* <span class="keyword">TO</span> <span class="string">'root'</span>@<span class="string">'%'</span> <span class="keyword">IDENTIFIED</span> <span class="keyword">BY</span> <span class="string">'root'</span> <span class="keyword">WITH</span> <span class="keyword">GRANT</span> <span class="keyword">OPTION</span>;<span class="keyword">FLUSH</span> <span class="keyword">PRIVILEGES</span>;</span><br></pre></td></tr></table></figure>
 
-<h3 id="2-Project-gt-Artifacts-gt-增加webApplication-Exploded-选在项目基础上"><a href="#2-Project-gt-Artifacts-gt-增加webApplication-Exploded-选在项目基础上" class="headerlink" title="2. Project-&gt;Artifacts-&gt;增加webApplication:Exploded 选在项目基础上"></a>2. Project-&gt;Artifacts-&gt;增加webApplication:Exploded 选在项目基础上</h3><h3 id="3-Project-gt-Artifacts-gt-增加webApplication-Archive-选在2的基础上"><a href="#3-Project-gt-Artifacts-gt-增加webApplication-Archive-选在2的基础上" class="headerlink" title="3. Project-&gt;Artifacts-&gt;增加webApplication:Archive 选在2的基础上"></a>3. Project-&gt;Artifacts-&gt;增加webApplication:Archive 选在2的基础上</h3><h3 id="4-发现有Create-Manifest的提示。点击，默认创建即可。然后点击apply和ok"><a href="#4-发现有Create-Manifest的提示。点击，默认创建即可。然后点击apply和ok" class="headerlink" title="4. 发现有Create Manifest的提示。点击，默认创建即可。然后点击apply和ok"></a>4. 发现有Create Manifest的提示。点击，默认创建即可。然后点击apply和ok</h3><h3 id="5-重新build项目。Build-gt-Build-Artifacts-gt-All-Artifacts-gt-build"><a href="#5-重新build项目。Build-gt-Build-Artifacts-gt-All-Artifacts-gt-build" class="headerlink" title="5. 重新build项目。Build-&gt;Build Artifacts-&gt;All Artifacts-&gt;build"></a>5. 重新build项目。Build-&gt;Build Artifacts-&gt;All Artifacts-&gt;build</h3><h3 id="6-创建好后进入项目文件夹out-artifacts-项目名-war"><a href="#6-创建好后进入项目文件夹out-artifacts-项目名-war" class="headerlink" title="6. 创建好后进入项目文件夹out/artifacts/项目名_war/"></a>6. 创建好后进入项目文件夹out/artifacts/项目名_war/</h3><h3 id="7-将-war文件传至服务器的-usr-locol-tomcat-webapps下。进入服务器后重启tomcat会自动解压"><a href="#7-将-war文件传至服务器的-usr-locol-tomcat-webapps下。进入服务器后重启tomcat会自动解压" class="headerlink" title="7. 将.war文件传至服务器的/usr/locol/tomcat/webapps下。进入服务器后重启tomcat会自动解压"></a>7. 将.war文件传至服务器的/usr/locol/tomcat/webapps下。进入服务器后重启tomcat会自动解压</h3><h3 id="8-访问http-服务器ip-8080-项目名"><a href="#8-访问http-服务器ip-8080-项目名" class="headerlink" title="8. 访问http://服务器ip:8080/项目名"></a>8. 访问http://服务器ip:8080/项目名</h3><p>这个时候所写的项目已成功部署，可以通过访问了。</p>
+<h2 id="打包web项目"><a href="#打包web项目" class="headerlink" title="打包web项目"></a>打包web项目</h2><ul>
+<li><p>先修改jdbc.properties文件的url 为下面的。将192.168.44.128换成服务器ip</p>
+ <figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="attr">url</span>=jdbc:mysql://<span class="number">192.168</span>.<span class="number">44.128</span>:<span class="number">3306</span>/further?useUnicode=<span class="literal">yes</span>&amp;</span><br><span class="line"><span class="attr">characterEncoding</span>=utf8</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Project-&gt;Artifacts-&gt;增加webApplication:Exploded 选在项目基础上</p>
+</li>
+<li><p>Project-&gt;Artifacts-&gt;增加webApplication:Archive 选在2的基础上</p>
+</li>
+<li><p>发现有Create Manifest的提示。点击，默认创建即可。然后点击apply和ok</p>
+</li>
+<li><p>重新build项目。Build-&gt;Build Artifacts-&gt;All Artifacts-&gt;build</p>
+</li>
+<li><p>创建好后进入项目文件夹out/artifacts/项目名_war/</p>
+</li>
+<li><p>将.war文件传至服务器的/usr/locol/tomcat/webapps下。进入服务器后重启tomcat会自动解压</p>
+</li>
+<li><p>访问http://服务器ip:8080/项目名</p>
+</li>
+</ul>
+<p><strong>这个时候我们所写的项目已成功部署，可以通过浏览器输入服务器的ip地址访问了。若想通过域名访问需要到服务器控制台将域名解析到我们的服务器。</strong></p>
 ]]></content>
       <categories>
         <category>Java web</category>
@@ -407,7 +438,7 @@
   <entry>
     <title>Markdown基本语法</title>
     <url>/posts/markdown-programmer.html</url>
-    <content><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><ul>
+    <content><![CDATA[<ul>
 <li><p>Markdown是什么？</p>
 <p> Markdown是一种轻量级标记语言，它以纯文本形式(易读、易写、易更改)编写文档，并最终以HTML格式发布。<br>Markdown也可以理解为将以MARKDOWN语法编写的语言转换成HTML内容的工具。</p>
 </li>
