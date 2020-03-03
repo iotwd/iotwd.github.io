@@ -1,6 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>python实现机场自动签到获取流量</title>
+    <url>/posts/73dc57b.html</url>
+    <content><![CDATA[<ul>
+<li>前言</li>
+</ul>
+<p>前段时间买了个机场，签到送流量，每天签到也够麻烦的，好像网上有这个代码，自己太懒就动手写个爬虫，放在服务器实现自动签到，刚好把看的爬虫拿来练练手。理论适用于相同源码搭建的平台。</p>
+<a id="more"></a>
+
+<h2 id="需求分析"><a href="#需求分析" class="headerlink" title="需求分析"></a>需求分析</h2><h3 id="抓包分析"><a href="#抓包分析" class="headerlink" title="抓包分析"></a>抓包分析</h3><p>实现自动签到首先需要进行抓包，弄清浏览器在做出相关动作时发送的请求，这里利用的抓包工具是Fiddler。</p>
+<p>通过抓包可以得到用户在登录的时候所发送的请求地址与请求协议。</p>
+<ul>
+<li>登录：<ul>
+<li>地址：<code>https://example.com/auth/login</code></li>
+<li>协议：post</li>
+</ul>
+</li>
+<li>签到：<ul>
+<li>地址 <code>https://example.com/user/checkin</code></li>
+<li>协议：post</li>
+</ul>
+</li>
+</ul>
+<h3 id="程序流程"><a href="#程序流程" class="headerlink" title="程序流程"></a>程序流程</h3><ul>
+<li>导入工具包</li>
+<li>构建请求报头</li>
+<li>获取session值</li>
+<li>模拟登录</li>
+<li>完成签到任务</li>
+</ul>
+<h2 id="编写python代码"><a href="#编写python代码" class="headerlink" title="编写python代码"></a>编写python代码</h2><p>代码的编写比较容易，这里直接贴出代码。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> urllib3</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">Check_in</span><span class="params">(emaill, passwd)</span>:</span></span><br><span class="line">    login = <span class="string">'https://example.com/auth/login'</span></span><br><span class="line">    <span class="comment"># 构建请求头</span></span><br><span class="line">    headers = &#123;</span><br><span class="line">        <span class="string">"User-Agent"</span>: <span class="string">"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36"</span>,</span><br><span class="line">        <span class="string">"X-Requested-With"</span>: <span class="string">"XMLHttpRequest"</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment"># 登录地址</span></span><br><span class="line">    login_url = <span class="string">'https://example.com/auth/login'</span></span><br><span class="line">    <span class="comment"># 忽视verify = False的错误提示</span></span><br><span class="line">    requests.packages.urllib3.disable_warnings()</span><br><span class="line">    <span class="comment"># 使用Session，利用session发送get请求获得cookie</span></span><br><span class="line">    session = requests.Session()</span><br><span class="line">    html = session.get(login_url, verify=<span class="literal">False</span>, headers=headers).text</span><br><span class="line">    data = &#123;</span><br><span class="line">        <span class="string">"email"</span>: emaill,</span><br><span class="line">        <span class="string">"passwd"</span>: passwd,</span><br><span class="line">        <span class="string">"code"</span>: <span class="string">""</span></span><br><span class="line">    &#125;</span><br><span class="line">    requests.packages.urllib3.disable_warnings()</span><br><span class="line">    <span class="comment">#登录到该网页</span></span><br><span class="line">    req = session.post(login_url, data=data, verify=<span class="literal">False</span>, headers=headers)</span><br><span class="line">    <span class="comment"># 签到地址</span></span><br><span class="line">    check_in = <span class="string">'https://example.com/user/checkin'</span></span><br><span class="line">    req = session.post(check_in, headers=headers)</span><br><span class="line">    print(<span class="string">"用户"</span> + emaill + <span class="string">"签到成功"</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">users = [&#123;</span><br><span class="line">    <span class="string">"email"</span>: <span class="string">"emaill1@qq.com"</span>,</span><br><span class="line">    <span class="string">"passwd"</span>: <span class="string">"password"</span></span><br><span class="line">&#125;, &#123;</span><br><span class="line">    <span class="string">"email"</span>: <span class="string">"emaill2@163.com"</span>,</span><br><span class="line">    <span class="string">"passwd"</span>: <span class="string">"password"</span></span><br><span class="line">&#125;]</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> user <span class="keyword">in</span> users:</span><br><span class="line">    print(user[<span class="string">'email'</span>], user[<span class="string">'passwd'</span>])</span><br><span class="line">    Check_in(user[<span class="string">'email'</span>], user[<span class="string">'passwd'</span>])</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>注意</strong><br>在发送请求的时候有个坑，因为浏览器访问该网页时需要设置证书，如果在发送请求时不设置会出现如下的错误：<figure class="highlight http"><table><tr><td class="code"><pre><span class="line"><span class="attribute">OpenSSL.SSL.Error</span>: [('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')]</span><br><span class="line"></span><br><span class="line"><span class="attribute">urllib3.exceptions.MaxRetryError</span>: HTTPSConnectionPool(host='baicaonetwork.com', port=443): Max retries exceeded with url: /auth/login (Caused by SSLError(SSLError("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')])")))</span><br><span class="line"></span><br><span class="line"><span class="attribute">requests.exceptions.SSLError</span>: HTTPSConnectionPool(host='baicaonetwork.com', port=443): Max retries exceeded with url: /auth/login (Caused by SSLError(SSLError("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')])")))</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<p>解决办法：<br>将<code>session.post(login_url, data=data, verify=False, headers=headers)</code>中的Verify需要设置为False,默认是True</p>
+<p>我们可以在send函数看到默认值是True<br><code>def send(self, request, stream=False, timeout=None, verify=True, cert=None, proxies=None):</code></p>
+<p>在将verify设置为False后，运行程序虽然可以签到成功，但是会出现一个警告：<br><code>InsecureRequestWarning: Unverified HTTPS request is being made to host &#39;127.0.0.1&#39;. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning</code></p>
+<p>我们可以在请求前添加一句代码：<code>requests.packages.urllib3.disable_warnings()</code>来忽略警告。</p>
+<h2 id="设置定时任务"><a href="#设置定时任务" class="headerlink" title="设置定时任务"></a>设置定时任务</h2><p>定时任务可以放到服务器上自己执行，如果没有服务器，放在Linux电脑上也可以。</p>
+<p>设置定时任务用到的是crontabs服务。</p>
+<h3 id="编辑任务"><a href="#编辑任务" class="headerlink" title="编辑任务"></a>编辑任务</h3><p>执行<code>crontab -e</code></p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section"># m h dom mon dow command</span></span><br><span class="line"><span class="section"># 定时执行python脚本，输出log,每天八点半执行一次</span></span><br><span class="line">30 8 <span class="emphasis">* *</span> * python /home/test.py &gt; /tmp/test<span class="emphasis">_cron_</span>log.txt 2&gt;&amp;1 &amp;</span><br><span class="line"><span class="section"># 定时执行shell命令</span></span><br><span class="line"><span class="bullet">* </span><span class="emphasis">* *</span> <span class="emphasis">* *</span> echo "Hello world!" &gt;&gt; /tmp/test<span class="emphasis">_cron_</span>log.txt</span><br><span class="line"><span class="section"># 定时执行shell脚本,test.sh需要有执行权限</span></span><br><span class="line"><span class="bullet">* </span><span class="emphasis">* *</span> <span class="emphasis">* *</span> /root/test.sh &gt;&gt; /tmp/test<span class="emphasis">_cron_</span>log.txt</span><br></pre></td></tr></table></figure>
+<h3 id="查看任务"><a href="#查看任务" class="headerlink" title="查看任务"></a>查看任务</h3><p>执行<code>crontab -l</code>可以查看任务，此时会打开任务文件</p>
+<p>每次编辑任务后，都需要使用service cron reload命令重载任务</p>
+<h3 id="参数解释"><a href="#参数解释" class="headerlink" title="参数解释"></a>参数解释</h3><figure class="highlight angelscript"><table><tr><td class="code"><pre><span class="line"># m h dom mon dow command</span><br><span class="line">crontab 文件的格式：</span><br><span class="line">&#123;minute&#125; &#123;hour&#125; &#123;day-of-month&#125; &#123;month&#125; &#123;day-of-week&#125; &#123;full-path-to-shell-script&#125; </span><br><span class="line">o minute: 区间为 <span class="number">0</span> – <span class="number">59</span> </span><br><span class="line">o hour: 区间为<span class="number">0</span> – <span class="number">23</span> </span><br><span class="line">o day-of-month: 区间为<span class="number">0</span> – <span class="number">31</span> </span><br><span class="line">o month: 区间为<span class="number">1</span> – <span class="number">12.</span> <span class="number">1</span> 是<span class="number">1</span>月. <span class="number">12</span>是<span class="number">12</span>月. </span><br><span class="line">o Day-of-week: 区间为<span class="number">0</span> – <span class="number">7.</span> 周日可以是<span class="number">0</span>或<span class="number">7.</span></span><br></pre></td></tr></table></figure>
+
+<p>最后，启动一下服务，就可以去做别的事情了。</p>
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Introduce of iot</title>
     <url>/posts/introduce-of-iot.html</url>
     <content><![CDATA[<ul>
