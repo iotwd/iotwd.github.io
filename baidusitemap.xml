@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://wdxxy.net/posts/73dc57b.html</loc>
+    <loc>https://wdxxy.net/posts/cgi-python-windows.html</loc>
+    <lastmod>2020-03-03</lastmod>
+  </url>  <url>
+    <loc>https://wdxxy.net/posts/use-python-to-sign-in.html</loc>
     <lastmod>2020-03-03</lastmod>
   </url>  <url>
     <loc>https://wdxxy.net/posts/introduce-of-iot.html</loc>
@@ -11,9 +14,6 @@
     <lastmod>2020-03-01</lastmod>
   </url>  <url>
     <loc>https://wdxxy.net/posts/java-web-deploy-to-ecs.html</loc>
-    <lastmod>2020-03-01</lastmod>
-  </url>  <url>
-    <loc>https://wdxxy.net/posts/cgi-python-windows.html</loc>
     <lastmod>2020-03-01</lastmod>
   </url>  <url>
     <loc>https://wdxxy.net/posts/markdown-programmer.html</loc>

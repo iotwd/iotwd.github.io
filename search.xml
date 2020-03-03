@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>python实现机场自动签到获取流量</title>
-    <url>/posts/73dc57b.html</url>
+    <url>/posts/use-python-to-sign-in.html</url>
     <content><![CDATA[<ul>
 <li>前言</li>
 </ul>
@@ -57,8 +57,8 @@
         <category>python</category>
       </categories>
       <tags>
-        <tag>linux</tag>
         <tag>python</tag>
+        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
@@ -347,7 +347,7 @@
         <category>python</category>
       </categories>
       <tags>
-        <tag>Python</tag>
+        <tag>python</tag>
         <tag>cgi</tag>
       </tags>
   </entry>
