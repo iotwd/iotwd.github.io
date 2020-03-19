@@ -5,9 +5,9 @@
   <subtitle>偷得浮生半日闲，心情半佛半神仙。</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://wdxxy.net/"/>
+  <link href="https://cmdxy.com/"/>
   <updated>2020-03-19T16:22:50.670Z</updated>
-  <id>https://wdxxy.net/</id>
+  <id>https://cmdxy.com/</id>
   
   <author>
     <name>Cmdxy</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>python实现网站自动签到获取流量</title>
-    <link href="https://wdxxy.net/posts/use-python-to-sign-in.html"/>
-    <id>https://wdxxy.net/posts/use-python-to-sign-in.html</id>
+    <link href="https://cmdxy.com/posts/use-python-to-sign-in.html"/>
+    <id>https://cmdxy.com/posts/use-python-to-sign-in.html</id>
     <published>2020-03-03T02:59:22.000Z</published>
     <updated>2020-03-19T16:22:50.670Z</updated>
     
@@ -35,19 +35,19 @@
     </summary>
     
     
-      <category term="python" scheme="https://wdxxy.net/categories/python/"/>
+      <category term="python" scheme="https://cmdxy.com/categories/python/"/>
     
     
-      <category term="python" scheme="https://wdxxy.net/tags/python/"/>
+      <category term="python" scheme="https://cmdxy.com/tags/python/"/>
     
-      <category term="linux" scheme="https://wdxxy.net/tags/linux/"/>
+      <category term="linux" scheme="https://cmdxy.com/tags/linux/"/>
     
   </entry>
   
   <entry>
     <title>Introduce of iot</title>
-    <link href="https://wdxxy.net/posts/introduce-of-iot.html"/>
-    <id>https://wdxxy.net/posts/introduce-of-iot.html</id>
+    <link href="https://cmdxy.com/posts/introduce-of-iot.html"/>
+    <id>https://cmdxy.com/posts/introduce-of-iot.html</id>
     <published>2020-03-01T14:25:58.000Z</published>
     <updated>2020-03-01T16:08:12.111Z</updated>
     
@@ -63,17 +63,17 @@
     </summary>
     
     
-      <category term="Iot" scheme="https://wdxxy.net/categories/Iot/"/>
+      <category term="Iot" scheme="https://cmdxy.com/categories/Iot/"/>
     
     
-      <category term="Iot" scheme="https://wdxxy.net/tags/Iot/"/>
+      <category term="Iot" scheme="https://cmdxy.com/tags/Iot/"/>
     
   </entry>
   
   <entry>
     <title>Start My Blog Trip - Power By Hexo</title>
-    <link href="https://wdxxy.net/posts/start-my-blog.html"/>
-    <id>https://wdxxy.net/posts/start-my-blog.html</id>
+    <link href="https://cmdxy.com/posts/start-my-blog.html"/>
+    <id>https://cmdxy.com/posts/start-my-blog.html</id>
     <published>2020-02-07T12:41:26.425Z</published>
     <updated>2020-03-01T16:04:44.634Z</updated>
     
@@ -97,8 +97,8 @@
   
   <entry>
     <title>Windows使用cgi网络编程（python）</title>
-    <link href="https://wdxxy.net/posts/cgi-python-windows.html"/>
-    <id>https://wdxxy.net/posts/cgi-python-windows.html</id>
+    <link href="https://cmdxy.com/posts/cgi-python-windows.html"/>
+    <id>https://cmdxy.com/posts/cgi-python-windows.html</id>
     <published>2019-12-14T03:31:40.000Z</published>
     <updated>2020-03-03T03:51:19.572Z</updated>
     
@@ -114,19 +114,19 @@
     </summary>
     
     
-      <category term="python" scheme="https://wdxxy.net/categories/python/"/>
+      <category term="python" scheme="https://cmdxy.com/categories/python/"/>
     
     
-      <category term="python" scheme="https://wdxxy.net/tags/python/"/>
+      <category term="python" scheme="https://cmdxy.com/tags/python/"/>
     
-      <category term="cgi" scheme="https://wdxxy.net/tags/cgi/"/>
+      <category term="cgi" scheme="https://cmdxy.com/tags/cgi/"/>
     
   </entry>
   
   <entry>
     <title>将Java web项目部署到Linux云服务器（Centos7为例）</title>
-    <link href="https://wdxxy.net/posts/java-web-deploy-to-ecs.html"/>
-    <id>https://wdxxy.net/posts/java-web-deploy-to-ecs.html</id>
+    <link href="https://cmdxy.com/posts/java-web-deploy-to-ecs.html"/>
+    <id>https://cmdxy.com/posts/java-web-deploy-to-ecs.html</id>
     <published>2019-11-15T03:31:40.000Z</published>
     <updated>2020-03-01T16:02:49.566Z</updated>
     
@@ -142,17 +142,17 @@
     </summary>
     
     
-      <category term="Java web" scheme="https://wdxxy.net/categories/Java-web/"/>
+      <category term="Java web" scheme="https://cmdxy.com/categories/Java-web/"/>
     
     
-      <category term="Java Web" scheme="https://wdxxy.net/tags/Java-Web/"/>
+      <category term="Java Web" scheme="https://cmdxy.com/tags/Java-Web/"/>
     
   </entry>
   
   <entry>
     <title>Markdown基本语法</title>
-    <link href="https://wdxxy.net/posts/markdown-programmer.html"/>
-    <id>https://wdxxy.net/posts/markdown-programmer.html</id>
+    <link href="https://cmdxy.com/posts/markdown-programmer.html"/>
+    <id>https://cmdxy.com/posts/markdown-programmer.html</id>
     <published>2019-11-09T15:20:28.000Z</published>
     <updated>2020-03-01T15:52:52.869Z</updated>
     
@@ -170,7 +170,7 @@
     
     
     
-      <category term="markdown" scheme="https://wdxxy.net/tags/markdown/"/>
+      <category term="markdown" scheme="https://cmdxy.com/tags/markdown/"/>
     
   </entry>
   
