@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Cdvim&#39;s Blog</title>
+  <title>Csdxy&#39;s Blog</title>
   
   <subtitle>偷得浮生半日闲，心情半佛半神仙。</subtitle>
   <link href="/atom.xml" rel="self"/>
@@ -10,7 +10,7 @@
   <id>https://wdxxy.net/</id>
   
   <author>
-    <name>Cdvim</name>
+    <name>Csdxy</name>
     
   </author>
   
