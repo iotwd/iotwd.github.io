@@ -57,12 +57,12 @@
         <category>python</category>
       </categories>
       <tags>
-        <tag>python</tag>
         <tag>linux</tag>
+        <tag>python</tag>
       </tags>
   </entry>
   <entry>
-    <title>Introduce of iot</title>
+    <title>物联网的简单介绍</title>
     <url>/posts/introduce-of-iot.html</url>
     <content><![CDATA[<ul>
 <li>物联网：</li>
@@ -217,7 +217,7 @@
       </tags>
   </entry>
   <entry>
-    <title>Start My Blog Trip - Power By Hexo</title>
+    <title>使用GitHub和hexo搭建静态博客</title>
     <url>/posts/start-my-blog.html</url>
     <content><![CDATA[<hr>
 <p> <strong>Life is a choice, Bad things happen to everybody, How you deal with it that matters.</strong></p>
@@ -255,13 +255,16 @@
 <li>运行：hexo d（将本地推送至GitHub）</li>
 <li>打开浏览器访问<a href="http://username.github.io.git" target="_blank" rel="noopener"></a></li>
 </ul>
-<h3 id="博客绑定域名"><a href="#博客绑定域名" class="headerlink" title="博客绑定域名"></a>博客绑定域名</h3><p>这时博客已经搭建好，使用域名访问比较好，也可以不用域名。</p>
+<h3 id="博客绑定域名"><a href="#博客绑定域名" class="headerlink" title="博客绑定域名"></a>博客绑定域名</h3><p>这时博客已经搭建好，通过username.github.io即可访问，但是使用域名访问会比较好，这里是绑定域名的方法。</p>
 <ul>
 <li>申请域名</li>
 <li>将域名解析到博客的地址。</li>
-<li>为博客添加CNAME文件，内容为你的域名，如github.com</li>
+<li>为博客添加CNAME文件，内容为你的域名，如github.com。<ul>
+<li>注意：这里的CNAME文件无后缀名。</li>
+</ul>
+</li>
 <li>运行 hexo g &amp;&amp; hexo d</li>
-<li>进入浏览器访问你的域名即可。</li>
+<li>进入浏览器访问你的域名。</li>
 </ul>
 <h2 id="如何使用Hexo博客？"><a href="#如何使用Hexo博客？" class="headerlink" title="如何使用Hexo博客？"></a>如何使用Hexo博客？</h2><p>此时博客已经搭建完毕，下面就可以更新博客内容了。</p>
 <h3 id="新建一篇博客"><a href="#新建一篇博客" class="headerlink" title="新建一篇博客"></a>新建一篇博客</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo n <span class="string">"文章名"</span></span><br></pre></td></tr></table></figure>
@@ -277,7 +280,25 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 <h2 id="如何进行主题美化？"><a href="#如何进行主题美化？" class="headerlink" title="如何进行主题美化？"></a>如何进行主题美化？</h2><p>网上有大量的教程，可自行搜索。</p>
-<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><p><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">hexo 中文</a></p>
+<h2 id="其他设置"><a href="#其他设置" class="headerlink" title="其他设置"></a>其他设置</h2><h3 id="插件相关"><a href="#插件相关" class="headerlink" title="插件相关"></a>插件相关</h3><p>由于hexo是静态博客，所有的文件资源都保留在本地，如果电脑坏了或者数据丢失，那就很难弄了。所以备份就十分重要了，之前我是将文件夹打包上传到云盘里面，后来才知道有个备份插件<a href="https://github.com/coneycode/hexo-git-backup" target="_blank" rel="noopener">hexo-git-backup</a>，只用一条命令就可以将博客文件备份到GitHub了。</p>
+<ul>
+<li><p>使用<code>hexo version</code>命令查看hexo版本。<br><img src="https://cdn.jsdelivr.net/gh/iotwd/imgHosting/cmdxy-pic/20200323000008.png" alt=""></p>
+</li>
+<li><p>安装备份插件</p>
+<ul>
+<li><p>hexo 版本为2.0 </p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-git-backup@0.0.91 --save</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>hexo 版本为3.0</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-git-backup --save</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>修改blog目录下_config.yml，添加如下配置</p>
+<figure class="highlight dts"><table><tr><td class="code"><pre><span class="line"><span class="symbol">backup:</span></span><br><span class="line"><span class="symbol">type:</span> git</span><br><span class="line"><span class="meta"># 主题信息</span></span><br><span class="line"><span class="symbol">theme:</span> next</span><br><span class="line"><span class="meta"># 自定义提交信息</span></span><br><span class="line"><span class="symbol">message:</span> Back up my www.cmdxy.com blog</span><br><span class="line"><span class="meta"># 仓库名</span></span><br><span class="line"><span class="symbol">repository:</span></span><br><span class="line"><span class="symbol">  github:</span> https:<span class="comment">//github.com/iotwd/iotwd.github.io.git,backup</span></span><br></pre></td></tr></table></figure></li>
+<li><p>使用<code>hexo backup</code>备份博客</p>
+<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2></li>
+</ul>
+<p><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">hexo 中文</a></p>
 <p><a href="https://thief.one/%2F2017%2F03%2F03%2FHexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B%2F" target="_blank" rel="noopener">nmask’s blog 配置美化</a></p>
 <p><a href="http://www.dragonstyle.win/3358042383.html" target="_blank" rel="noopener">Dragonstyle’s Home Next主题美化</a></p>
 ]]></content>
@@ -506,22 +527,22 @@
 </ul>
 <a id="more"></a>
 
-<h2 id="1-标题"><a href="#1-标题" class="headerlink" title="1. 标题"></a><strong>1. 标题</strong></h2><p>在想要设为标题的文字前加#，一个#是一级标题，两个#是二级标题，以此类推，共支持六级标题。<br><strong>注意：</strong>标准语法需要在#后加一个空格。</p>
+<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a><strong>标题</strong></h2><p>在想要设为标题的文字前加#，一个#是一级标题，两个#是二级标题，以此类推，共支持六级标题。<br><strong>注意：</strong>标准语法需要在#后加一个空格。</p>
 <p>示例：</p>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section"># 一级标题</span></span><br><span class="line"><span class="section">## 二级标题</span></span><br><span class="line"><span class="section">### 三级标题</span></span><br><span class="line"><span class="section">#### 四级标题</span></span><br><span class="line"><span class="section">##### 五级标题</span></span><br><span class="line"><span class="section">###### 六级标题</span></span><br></pre></td></tr></table></figure>
 <p>效果如下：</p>
-<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><h2 id="2-字体"><a href="#2-字体" class="headerlink" title="2. 字体"></a><strong>2. 字体</strong></h2><p><strong>1. 加粗</strong></p>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><h2 id="字体"><a href="#字体" class="headerlink" title="字体"></a><strong>字体</strong></h2><p><strong>加粗</strong></p>
 <p>要加粗的文字左右分别加<strong>2</strong>个*</p>
-<p><strong>2. 斜体</strong></p>
+<p><strong>斜体</strong></p>
 <p>要倾斜的文字左右分别加<strong>1</strong>个*</p>
-<p><strong>3. 斜体加粗</strong></p>
+<p><strong>斜体加粗</strong></p>
 <p>要倾斜和加粗的文字左右分部加<strong>3</strong>个* </p>
-<p><strong>4. 删除线</strong></p>
+<p><strong>删除线</strong></p>
 <p>要加删除线的文字左右分别加<strong>2</strong>个~</p>
 <p>示例：</p>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="strong">**文字加粗**</span></span><br><span class="line"><span class="emphasis">*文字倾斜*</span></span><br><span class="line"><span class="strong">***文字加粗倾斜**</span>*</span><br><span class="line">~~文字加删除线~~</span><br></pre></td></tr></table></figure>
 <p>效果如下：<br><strong>文字加粗</strong><br><em>文字倾斜</em><br><strong><em>文字加粗倾斜</em></strong><br><del>文字加删除线</del></p>
-<h2 id="3-引用"><a href="#3-引用" class="headerlink" title="3. 引用"></a><strong>3. 引用</strong></h2><p>在引用的文字前面加&gt;即可。引用可以嵌套。</p>
+<h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a><strong>引用</strong></h2><p>在引用的文字前面加&gt;即可。引用可以嵌套。</p>
 <p>示例：</p>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="quote">&gt; 愈艰难，就愈要做。改革，想来是没有一帆风顺的。 -鲁迅</span></span><br><span class="line">&gt;&gt; 读书应自己思索，自己做主。 -鲁迅</span><br></pre></td></tr></table></figure>
 <p>效果如下：</p>
@@ -531,18 +552,18 @@
 <p>读书应自己思索，自己做主。 -鲁迅</p>
 </blockquote>
 </blockquote>
-<h2 id="4-分割线"><a href="#4-分割线" class="headerlink" title="4. 分割线"></a><strong>4. 分割线</strong></h2><p>三个以上的-或者*<br>示例：</p>
+<h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a><strong>分割线</strong></h2><p>三个以上的-或者*<br>示例：</p>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">----</span><br><span class="line"><span class="emphasis">***</span></span><br><span class="line"><span class="emphasis">***</span>*</span><br></pre></td></tr></table></figure>
 <h2 id="效果如下："><a href="#效果如下：" class="headerlink" title="效果如下："></a>效果如下：</h2><hr>
 <hr>
 <hr>
-<h2 id="5-图片"><a href="#5-图片" class="headerlink" title="5. 图片"></a><strong>5. 图片</strong></h2><p>语法：</p>
+<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a><strong>图片</strong></h2><p>语法：</p>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">![<span class="string">图片下方文字</span>](<span class="link">图片地址 "图片标题"</span>)</span><br><span class="line">[]内填的文字等于对图片内容的解释，图片标题当鼠标移到图片上时会显示内容，可加可不加</span><br></pre></td></tr></table></figure>
 <p>示例：</p>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">![<span class="string">i love markdown</span>](<span class="link">https://cn.bing.com/th?id=OIP.KLvPfJ6Ui3cZQd4Zj17kJgHaE8&amp;pid=Api&amp;rs=1 "Bing photo"</span>)</span><br></pre></td></tr></table></figure>
 
 <p>效果如下：<br><img src="http://mikemclin.net/mmwp/wp-content/uploads/2013/03/markdown-syntax-language.png" alt="i love markdown" title="Bing photo"></p>
-<p><strong>6. 超链接</strong></p>
+<p><strong>超链接</strong></p>
 <p>语法：</p>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">超链接名</span>](<span class="link">超链接地址"超链接标题"</span>)</span><br><span class="line">标题可加可不加</span><br></pre></td></tr></table></figure>
 
@@ -551,7 +572,7 @@
 
 <p>效果如下：<br><a href="http://www.markdown.cn/" target="_blank" rel="noopener"语法说明"">markdown语法说明</a></p>
 <p><a href="google.com"Google"">Google</a></p>
-<h2 id="7-列表"><a href="#7-列表" class="headerlink" title="7. 列表"></a><strong>7. 列表</strong></h2><ul>
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a><strong>列表</strong></h2><ul>
 <li>无序列表</li>
 </ul>
 <p>语法：</p>
@@ -613,7 +634,7 @@
 </ol>
 </li>
 </ol>
-<h2 id="8-表格"><a href="#8-表格" class="headerlink" title="8. 表格"></a><strong>8. 表格</strong></h2><p>语法：</p>
+<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a><strong>表格</strong></h2><p>语法：</p>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">表头|表头|表头</span><br><span class="line">---|:--:|--:</span><br><span class="line">内容|内容|内容</span><br><span class="line">内容|内容|内容</span><br><span class="line"></span><br><span class="line"><span class="bullet">- </span>文字默认居左</span><br><span class="line"><span class="bullet">- </span>两边加:表示居中</span><br><span class="line"><span class="bullet">- </span>右边加:表示居右</span><br></pre></td></tr></table></figure>
 <p>示例：</p>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">| 时间 | 周日 | 周一 | 周二 | 周三 | 周四 | 周五 | 周六 |</span><br><span class="line">| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |</span><br><span class="line">| 6:00 | 休息 |   数 | 数   | 数   | 数   | 数   | 休息 |</span><br><span class="line">| 8:00 | 休息 |   数 | 数   | 数   | 数   | 数   | 休息 |</span><br></pre></td></tr></table></figure>
@@ -652,14 +673,14 @@
 <td>休息</td>
 </tr>
 </tbody></table>
-<h2 id="9-代码"><a href="#9-代码" class="headerlink" title="9. 代码"></a><strong>9. 代码</strong></h2><p>语法：</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a><strong>代码</strong></h2><p>语法：</p>
 <p>单行代码：代码两边各一个单引号</p>
 <p><code>$rm -rf /*</code></p>
 <p>代码块：代码两边各三个单引号</p>
 <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
-<h2 id="10-待办"><a href="#10-待办" class="headerlink" title="10. 待办"></a><strong>10. 待办</strong></h2><p>语法：<br>-空格[空格]空格 代办事项<br>-空格[x]空格 已完成事项<br>示例：</p>
+<h2 id="待办"><a href="#待办" class="headerlink" title="待办"></a><strong>待办</strong></h2><p>语法：<br>-空格[空格]空格 代办事项<br>-空格[x]空格 已完成事项<br>示例：</p>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">- </span>[ ] 吃饭</span><br><span class="line"><span class="bullet">- </span>[x] 学习</span><br></pre></td></tr></table></figure>
 <p>效果如下：</p>
 <ul>
