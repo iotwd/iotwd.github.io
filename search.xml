@@ -1,6 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Matlab2016b（x64）安装教程</title>
+    <url>/posts/install-matlab.html</url>
+    <content><![CDATA[<ul>
+<li>前言 </li>
+</ul>
+<p>记录下Matlab的安装教程。</p>
+<a id="more"></a>
+
+
+<h2 id="下载软件"><a href="#下载软件" class="headerlink" title="下载软件"></a>下载软件</h2><ul>
+<li>下载地址：自行搜索。</li>
+</ul>
+<h2 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h2><ul>
+<li><p>打开R2016b_win64_dvd1.iso，点击setup.exe进行安装</p>
+</li>
+<li><p>选择使用文件安装密钥 不需要Internet连接。然后点击下一步。<br><img src="https://cdn.jsdelivr.net/gh/iotwd/imgHosting/cmdxy-pic/20200323234548.png" alt=""></p>
+</li>
+<li><p>接受许可协议，下一步。</p>
+</li>
+<li><p>选择“我已有我的许可证的文件安装密钥”，输入秘钥：“09806-07443-53955-64350-21751-41297”，点击下一步<br><img src="https://cdn.jsdelivr.net/gh/iotwd/imgHosting/cmdxy-pic/20200323234844.png" alt=""></p>
+</li>
+<li><p>选择要安装的目录，尽量不要放到系统盘，点击下一步。<br><img src="https://cdn.jsdelivr.net/gh/iotwd/imgHosting/cmdxy-pic/20200323235114.png" alt=""></p>
+</li>
+<li><p>选择需要安装的产品，这里建议全选，（如果懂的话选择自己需要的）点击下一步。<br><img src="https://cdn.jsdelivr.net/gh/iotwd/imgHosting/cmdxy-pic/20200323235150.png" alt=""></p>
+</li>
+<li><p>进入“确认”页面，点击“安装”。<br>进入安装界面，安装时间很长（等待即可）。</p>
+</li>
+<li><p>安装完成之后，进入“产品配置说明”界面，点击下一步。</p>
+</li>
+<li><p>进入“安装完毕”界面，点击“完成”按钮，完成安装。</p>
+</li>
+</ul>
+<h2 id="破解步骤"><a href="#破解步骤" class="headerlink" title="破解步骤"></a>破解步骤</h2><ul>
+<li><p>解压“Matlab 2016b Win64 Crack.rar”</p>
+</li>
+<li><p>之后打开MATLAB 的安装目录<code>D:\Program Files\Matlab\bin\win64</code> ，点击“activate_matlab.exe”进行激活，选择“在不选择 Internet 情况下手动激活”，点击下一步<br><img src="https://cdn.jsdelivr.net/gh/iotwd/imgHosting/cmdxy-pic/20200323235957.png" alt=""></p>
+</li>
+<li><p>选择“输入许可证文件的完成路径（包括文件名）”，选择刚才解压的Matlab2016bWin64Crack文件夹中的许可文件“license_standalone.lic”，点击下一步。<br><img src="https://cdn.jsdelivr.net/gh/iotwd/imgHosting/cmdxy-pic/20200324000128.png" alt=""></p>
+</li>
+<li><p>显示“激活完成”，但是不要打开软件</p>
+</li>
+<li><p>进入解压的crack文件夹下的“\MATLAB Production Server\R2016b\bin\win64”中，复制四个dll文件。<br><img src="https://cdn.jsdelivr.net/gh/iotwd/imgHosting/cmdxy-pic/20200324000522.png" alt=""></p>
+</li>
+<li><p>之后去安装目录<code>D:\Program Files\Matlab\bin\win64</code> 文件夹下，将复制的四个 dll 文件粘贴在这个文件夹中，所有文件都选择“复制和替换”即可。</p>
+</li>
+<li><p>之后打开  <code>D:\Program\Matlab\bin</code> 文件夹下的 <code>matlab.exe</code>文件，就可以正常使用了。</p>
+<ul>
+<li>注意：每次启动都要到这里打开<code>matlab.exe</code>，所以可以创建一个快捷方式放到桌面，方便使用。</li>
+</ul>
+</li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
     <title>python实现网站自动签到获取流量</title>
     <url>/posts/use-python-to-sign-in.html</url>
     <content><![CDATA[<ul>
