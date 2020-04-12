@@ -3,7 +3,9 @@
   <entry>
     <title>centos7禁用22端口ssh和root登录</title>
     <url>/posts/centos-forbid-ssh-port.html</url>
-    <content><![CDATA[<p>-前言</p>
+    <content><![CDATA[<ul>
+<li>前言</li>
+</ul>
 <p>购买了服务器后的第一件事，修改默认的ssh端口，避免被人扫描和爆破。更加安全的方法是使用证书和加密实现无密码登录，只允许使用加密密钥的计算机进行登录。</p>
 <a id="more"></a>
 <p>准备工作：服务器一台，root用户登录。</p>
