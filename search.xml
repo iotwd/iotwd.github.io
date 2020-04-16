@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>Python爬虫小练习-discuz模拟登录</title>
-    <url>/posts/python-spider-login-discuz.html</url>
+    <url>/posts/python-spider-discuz.html</url>
     <content><![CDATA[<ul>
 <li><p>前言</p>
 <p> 最近注册了hostloc论坛，访问其他用户的主页还可以加积分，刚好写个爬虫自动访问，顺便练习一下xpath的使用。</p>
@@ -183,8 +183,8 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Python小练习-实现网站自动签到获取流量</title>
-    <url>/posts/use-python-to-sign-in.html</url>
+    <title>Python爬虫小练习-网站签到获取流量</title>
+    <url>/posts/python-spider-sspanel.html</url>
     <content><![CDATA[<ul>
 <li>前言</li>
 </ul>
