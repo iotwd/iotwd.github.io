@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://cmdxy.com/posts/java-web-deploy-to-ecs.html</loc>
+    
+    <lastmod>2020-04-16T00:59:37.587Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://cmdxy.com/posts/centos-forbid-ssh-port.html</loc>
     
     <lastmod>2020-04-12T11:22:16.847Z</lastmod>
@@ -54,13 +61,6 @@
     <loc>https://cmdxy.com/posts/cgi-python-windows.html</loc>
     
     <lastmod>2020-03-03T03:51:19.572Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://cmdxy.com/posts/java-web-deploy-to-ecs.html</loc>
-    
-    <lastmod>2020-03-01T16:02:49.566Z</lastmod>
     
   </url>
   
