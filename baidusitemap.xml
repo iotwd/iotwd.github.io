@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://cmdxy.com/posts/java-web-deploy-to-ecs.html</loc>
+    <loc>https://cmdxy.com/posts/centos-forbid-ssh-port.html</loc>
     <lastmod>2020-04-16</lastmod>
   </url>  <url>
-    <loc>https://cmdxy.com/posts/centos-forbid-ssh-port.html</loc>
-    <lastmod>2020-04-12</lastmod>
+    <loc>https://cmdxy.com/posts/java-web-deploy-to-ecs.html</loc>
+    <lastmod>2020-04-16</lastmod>
   </url>  <url>
     <loc>https://cmdxy.com/posts/install-matlab.html</loc>
     <lastmod>2020-03-23</lastmod>

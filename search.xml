@@ -518,7 +518,7 @@
       </tags>
   </entry>
   <entry>
-    <title>将Java web项目部署到Linux云服务器（Centos7+apache+mysql）</title>
+    <title>将Java web项目部署到Linux云服务器（CentOS7+Apache+Mysql）</title>
     <url>/posts/java-web-deploy-to-ecs.html</url>
     <content><![CDATA[<ul>
 <li>前言<ul>
